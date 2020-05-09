@@ -1,16 +1,16 @@
 package livraria;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 /**
  *
- * @author CarneiroDev
+ * @author CarneirosDev
  */
 public class Main {
    
     public static void main(String[] args) {
     
-        JOptionPane.showMessageDialog(null, "We are CarneiroDev!!!!!");
+        JOptionPane.showMessageDialog(null, "We are CarneirosDev!!!!!");
         
         
     }

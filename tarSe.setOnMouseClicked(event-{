@@ -1,0 +1,23 @@
+[33mcommit 4525fca0f986ca0290f65b5372a822f5f73dc9b6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Geraldo Quende <adolfoquende@hotmail.com>
+Date:   Sun May 10 19:42:11 2020 +0100
+
+    Add Login View, styles, defined color universal, Library JOfenix adn StrategyPatten
+
+[33mcommit fc77d370ea075429e6e234b4ab269d0132c8d1d7[m
+Author: Geraldo Quende <adolfoquende@hotmail.com>
+Date:   Sat May 9 19:06:00 2020 +0100
+
+    Estrutura MVC
+
+[33mcommit d9d9d230eb31ffe996caab9150b631415c2e2c6b[m
+Author: Geraldo Quende <adolfoquende@hotmail.com>
+Date:   Sat May 9 18:59:02 2020 +0100
+
+    Estrutura MVC
+
+[33mcommit 21662b1c61a5852ccdda78c420e411a12691aa30[m
+Author: Geraldo Quende <adolfoquende@hotmail.com>
+Date:   Sat May 9 18:29:48 2020 +0100
+
+    Base Version

@@ -1,0 +1,41 @@
+
+
+/*Definicao de cores universais*/
+
+* {
+    primaria : #028090;
+    secundaria : #00A896;
+    tercearia: #02C39A;
+    quartearia: #F0F3BD;
+}
+
+
+.button {
+    -fx-background-color: quartearia;
+}
+
+.labeTExt{
+
+    -fx-color: quartearia;
+-fx-text-fill: quartearia;
+
+}
+
+
+.painelFundo{
+    
+    
+    -fx-background-color: primaria;
+}
+.painelSecundario{
+    
+     -fx-background-color: secundaria;  
+    
+    
+}
+.painelTerceario{
+    
+     -fx-background-color: quartearia;  
+    
+    
+}

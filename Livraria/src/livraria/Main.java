@@ -11,9 +11,8 @@ import javax.swing.*;
 import livraria.classes.LivrariaStrategy;
 import livraria.controllers.Login;
 
-/**
- *
- * @author CarneirosDev
+
+ /* @author CarneirosDev
  */
 public class Main extends Application{
    public static Stage janelaPrincipal;
@@ -34,18 +33,12 @@ public class Main extends Application{
           
           JOptionPane.showMessageDialog(null,"Erro a tentar abrir a View"+erro.getMessage());
       }
-     
-      
-        
     }
    
     
     
     public static void main(String[] args) {
       launch(args);
-       
-        
-      
         
     }
     

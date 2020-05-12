@@ -5,6 +5,11 @@ import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.animation.TranslateTransition;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
@@ -12,6 +17,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+
+import javax.swing.*;
+import java.io.IOException;
 
 public class Login {
 
@@ -110,14 +118,6 @@ public class Login {
                 transition2.play();
             });
         });
-
-
-
-      
-      
-      
-      
-               
     }
     
     private void transicoes()/*Esta funcao faz as trancicoes das imagens */
@@ -141,13 +141,38 @@ public class Login {
       @FXML
     void fazerLogin(ActionEvent event) {
           System.out.println("Funcionando!!");
-    }
 
+          boolean login=true;//Variavel para receber dados logicos da Base de Dados
+
+
+          if(login)//Ensira a condicao se os dados recuperados da BD forem todos certos
+          {
+
+           try {
+               FXMLLoader carregador= new FXMLLoader();
+               carregador.setLocation(getClass().getResource("/livraria/views/DashBoard.fxml"));
+               Parent dashboard=carregador.load();
+               Scene cenario= new Scene(dashboard);
+               Stage janela=(Stage)((Node)event.getSource()).getScene().getWindow();
+               janela.setTitle("CarnBook");
+               DashBoardController controller= carregador.getController();//Para passar dados de Login na DashBoard
+               janela.setScene(cenario);
+
+
+
+           }catch (IOException erro){
+               System.out.println("Erro ao tentar mostrar a View");
+           }
+
+          }
+          else {
+
+              JOptionPane.showMessageDialog(null,"Nao foi possivel efectuar o Login");
+
+          }
+    }
     @FXML
     void registar(ActionEvent event) {
-
         System.out.println("Funcionando!");
     }
-    
-
 }

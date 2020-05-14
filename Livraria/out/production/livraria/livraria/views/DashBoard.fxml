@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="911.0" style="-fx-background-color: #DEDEDE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.DashBoardController">
    <children>
       <Pane prefHeight="538.0" prefWidth="190.0" styleClass="painelFundo" stylesheets="@../resources/styles/estilos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -24,7 +24,7 @@
                   <Circle fill="WHITE" radius="33.0" stroke="WHITE" strokeType="INSIDE" />
                   <Label text="Nome do usario" textFill="#f0f3bd" />
                   <Separator prefWidth="200.0" />
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="2.0" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Resumo" textFill="#f0f3bd">
+                  <JFXButton fx:id="btnResumo" alignment="BASELINE_LEFT" graphicTextGap="2.0" onAction="#mostrarResumo" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Resumo" textFill="#f0f3bd">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -51,7 +51,7 @@
                         <Insets left="20.0" />
                      </padding>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="2.0" layoutX="10.0" layoutY="252.0" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Chat" textFill="#f0f3bd">
+                  <JFXButton fx:id="btnChat" alignment="BASELINE_LEFT" graphicTextGap="2.0" layoutX="10.0" layoutY="252.0" onAction="#abrirChat" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Chat" textFill="#f0f3bd">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -82,7 +82,7 @@
       </Pane>
       <AnchorPane fx:id="ancorCentro" prefHeight="521.0" prefWidth="701.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
-            <AnchorPane layoutX="12.0" prefHeight="200.0" prefWidth="679.0" style="-fx-background-radius: 20; -fx-background-color: #F0F3BD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane layoutX="12.0" prefHeight="200.0" prefWidth="679.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label layoutX="80.0" layoutY="49.0" prefHeight="101.0" prefWidth="202.0" text="Nunca Desista de Seus Sonho" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="49.400000000000006" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="418.6" AnchorPane.topAnchor="49.0">
                      <font>
@@ -96,7 +96,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane layoutY="236.0" prefHeight="254.0" prefWidth="679.0" style="-fx-background-radius: 10; -fx-background-color: #F0F3BD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <AnchorPane layoutY="236.0" prefHeight="254.0" prefWidth="679.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <children>
                   <Label layoutX="27.0" layoutY="14.0" text="Mais Recentes">
                      <font>

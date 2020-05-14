@@ -161,7 +161,7 @@ public class Login {
 
 
            }catch (IOException erro){
-               System.out.println("Erro ao tentar mostrar a View");
+               System.out.println("Erro ao tentar mostrar a View\n"+erro.getMessage());
            }
 
           }

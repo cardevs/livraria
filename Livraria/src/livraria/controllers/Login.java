@@ -20,7 +20,9 @@ import javafx.scene.layout.Pane;
 
 import javax.swing.*;
 import java.io.IOException;
-
+import livraria.model.core.ConexaoDB;
+import java.sql.Connection;
+import livraria.model.LoginDAO;
 public class Login {
 
      @FXML
@@ -140,12 +142,11 @@ public class Login {
     
       @FXML
     void fazerLogin(ActionEvent event) {
-          System.out.println("Funcionando!!");
-
-          boolean login=true;//Variavel para receber dados logicos da Base de Dados
-
-
-          if(login)//Ensira a condicao se os dados recuperados da BD forem todos certos
+        LoginDAO vloginDaO= new LoginDAO(); //Instancia de LoginDao
+        String usuarioName=usernameLogin.getText();//Guardando os valores vindo do TextField username
+        String usuarioPass=passwordLogin.getText();//Guardando os valores vindo do TextField password
+/*Verifica se os dados estão corretos.*/
+          if(vloginDaO.entrar(usuarioName, usuarioPass))//Ensira a condicao se os dados recuperados da BD forem todos certos
           {
 
            try {

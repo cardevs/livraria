@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import javax.swing.*;
 import livraria.classes.LivrariaStrategy;
 import livraria.controllers.Login;
-import livraria.model.core.SQLiteBD;
+import livraria.model.core.ConexaoDB;
 
 
 /* @author CarneirosDev
@@ -41,12 +41,10 @@ public class Main extends Application{
     
     
     public static void main(String[] args) {
-
-        SQLiteBD conexao= new SQLiteBD();
-
-        Connection con=conexao.conectar();
-        System.out.println(con);
+        Connection conn=null;
+        conn=ConexaoDB.getConnection();
         launch(args);
+       
         
     }
     

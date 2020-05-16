@@ -1,6 +1,8 @@
 package livraria;
 
 import java.io.IOException;
+import java.sql.Connection;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,9 +12,10 @@ import javafx.stage.Stage;
 import javax.swing.*;
 import livraria.classes.LivrariaStrategy;
 import livraria.controllers.Login;
+import livraria.model.core.SQLiteBD;
 
 
- /* @author CarneirosDev
+/* @author CarneirosDev
  */
 public class Main extends Application{
    public static Stage janelaPrincipal;
@@ -38,7 +41,12 @@ public class Main extends Application{
     
     
     public static void main(String[] args) {
-      launch(args);
+
+        SQLiteBD conexao= new SQLiteBD();
+
+        Connection con=conexao.conectar();
+        System.out.println(con);
+        launch(args);
         
     }
     

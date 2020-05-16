@@ -18,6 +18,7 @@
 
     -fx-color: quartearia;
 -fx-text-fill: quartearia;
+ -fx-prompt-text-fill: quartearia;
 
 }
 
@@ -35,7 +36,18 @@
 }
 .painelTerceario{
     
-     -fx-background-color: quartearia;  
-    
-    
+     -fx-background-color: quartearia;        
 }
+
+.botaoCancelar{
+
+
+-fx-background-color: #ffffff;
+}
+
+.botaoAdd, .botaoConfirmar{
+
+
+-fx-background-color: #FFE300;
+}
+

@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXProgressBar?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
@@ -76,6 +77,14 @@
                         <Insets left="20.0" />
                      </padding>
                   </JFXButton>
+                  <ImageView fitHeight="66.0" fitWidth="48.0" onMouseClicked="#adicionarLivro" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icon/add_96px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
                </children>
             </VBox>
          </children>

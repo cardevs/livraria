@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
@@ -8,7 +9,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-
 
 <AnchorPane prefHeight="521.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.ChatController">
    <children>
@@ -18,9 +18,9 @@
                <children>
                   <VBox prefHeight="522.0" prefWidth="179.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
-                        <Label text="Geraldo Quende" />
-                        <Label layoutX="10.0" layoutY="20.0" text="Adamastor Chimalange" />
-                        <Label layoutX="10.0" layoutY="38.0" text="Edson Kay" />
+                        <Label text="Geraldo Quende" textFill="WHITE" />
+                        <Label layoutX="10.0" layoutY="20.0" text="Adamastor Chimalange" textFill="WHITE" />
+                        <Label layoutX="10.0" layoutY="38.0" text="Edson Kay" textFill="WHITE" />
                      </children>
                      <opaqueInsets>
                         <Insets />
@@ -33,11 +33,14 @@
             </AnchorPane>
          </content>
       </ScrollPane>
-      <TextField layoutX="14.0" layoutY="472.0" onKeyPressed="#enviarMensagem" prefHeight="30.0" prefWidth="434.0" promptText="Insira a mensagem" AnchorPane.bottomAnchor="18.6" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="252.60000000000002" />
+      <TextField layoutX="14.0" layoutY="472.0" prefHeight="30.0" prefWidth="434.0" promptText="Insira a mensagem" AnchorPane.bottomAnchor="18.6" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="252.60000000000002" />
       <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="462.0" layoutY="472.0" onMouseClicked="#enviarMensagem" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="200.0">
          <image>
             <Image url="@../resources/icon/sent_24px.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <ScrollPane layoutX="11.0" layoutY="1.0" prefHeight="463.0" prefWidth="502.0" AnchorPane.bottomAnchor="56.80000000000001" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="187.60000000000002" AnchorPane.topAnchor="1.0">
         <content>

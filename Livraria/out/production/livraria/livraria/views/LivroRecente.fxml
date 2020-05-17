@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="127.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.LivroRecenteController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="127.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle fx:id="img" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" stroke="BLACK" strokeType="INSIDE" width="122.0" />
+            <Label fx:id="livroTitulo" alignment="CENTER" prefHeight="5.0" prefWidth="127.0" text="Titutlo">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="livroAutor" alignment="CENTER" layoutX="10.0" layoutY="164.0" prefHeight="0.0" prefWidth="127.0" text="Autor">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+            <JFXProgressBar fx:id="progresso" />
+            <Label fx:id="percentagem" alignment="CENTER" layoutX="10.0" layoutY="179.0" prefHeight="0.0" prefWidth="127.0" text="50">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

@@ -9,7 +9,6 @@ import java.sql.SQLException;
 public class SQLiteBD {
 
         protected Connection conection=null;
-
         public Connection conectar() {
             try{
                 conection= DriverManager.getConnection("jdbc:sqlite:database/livraria.db");
@@ -22,7 +21,6 @@ public class SQLiteBD {
             }
             return null;
         }
-
         public void desconectar() {
             if(conection!=null){
                 try {
@@ -34,4 +32,6 @@ public class SQLiteBD {
                 }
             }
         }
+
+
 }

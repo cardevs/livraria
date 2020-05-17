@@ -5,6 +5,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -112,135 +113,39 @@
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <HBox alignment="CENTER" layoutX="10.0" layoutY="54.0" prefHeight="182.0" prefWidth="681.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
-                     <children>
-                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="127.0">
+                  <ScrollPane fx:id="maisRecenteScroll" layoutX="8.0" layoutY="42.0" prefHeight="208.0" prefWidth="690.0" style="-fx-background-color: #ffffff;" vbarPolicy="NEVER" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="3.0">
+                     <content>
+                        <HBox fx:id="boxMaisRecentes" alignment="CENTER_LEFT" prefHeight="191.0" prefWidth="694.0" spacing="10.0" style="-fx-background-color: transparent;">
                            <children>
-                              <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/img/nuncaDesista.jpg" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Nunca Desista de seus sonhos">
-                                 <font>
-                                    <Font name="System Bold" size="9.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="10.0" layoutY="160.0" text="Augusto Cury">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                              <JFXProgressBar />
-                              <Label layoutX="47.0" layoutY="174.0" text="50%">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
+                              <VBox alignment="TOP_CENTER" layoutX="392.0" layoutY="10.0" prefHeight="200.0" prefWidth="127.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/img/nuncaDesista.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Nunca Desista de seus sonhos">
+                                       <font>
+                                          <Font name="System Bold" size="9.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="160.0" text="Augusto Cury">
+                                       <font>
+                                          <Font size="9.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXProgressBar />
+                                    <Label text="50%">
+                                       <font>
+                                          <Font size="9.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
                            </children>
-                        </VBox>
-                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="127.0">
-                           <children>
-                              <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/img/nuncaDesista.jpg" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Nunca Desista de seus sonhos">
-                                 <font>
-                                    <Font name="System Bold" size="9.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="10.0" layoutY="160.0" text="Augusto Cury">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                              <JFXProgressBar />
-                              <Label text="50%">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </VBox>
-                        <VBox alignment="TOP_CENTER" layoutX="137.0" layoutY="10.0" prefHeight="200.0" prefWidth="127.0">
-                           <children>
-                              <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/img/nuncaDesista.jpg" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Nunca Desista de seus sonhos">
-                                 <font>
-                                    <Font name="System Bold" size="9.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="10.0" layoutY="160.0" text="Augusto Cury">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                              <JFXProgressBar />
-                              <Label text="50%">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </VBox>
-                        <VBox alignment="TOP_CENTER" layoutX="264.0" layoutY="10.0" prefHeight="200.0" prefWidth="127.0">
-                           <children>
-                              <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/img/nuncaDesista.jpg" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Nunca Desista de seus sonhos">
-                                 <font>
-                                    <Font name="System Bold" size="9.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="10.0" layoutY="160.0" text="Augusto Cury">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                              <JFXProgressBar />
-                              <Label text="50%">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </VBox>
-                        <VBox alignment="TOP_CENTER" layoutX="392.0" layoutY="10.0" prefHeight="200.0" prefWidth="127.0">
-                           <children>
-                              <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/img/nuncaDesista.jpg" />
-                                 </image>
-                              </ImageView>
-                              <Label text="Nunca Desista de seus sonhos">
-                                 <font>
-                                    <Font name="System Bold" size="9.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="10.0" layoutY="160.0" text="Augusto Cury">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                              <JFXProgressBar />
-                              <Label text="50%">
-                                 <font>
-                                    <Font size="9.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </VBox>
-                     </children>
-                  </HBox>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
                </children>
             </AnchorPane>
          </children>

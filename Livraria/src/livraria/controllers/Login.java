@@ -152,16 +152,19 @@ public class Login {
                FXMLLoader carregador= new FXMLLoader();
                carregador.setLocation(getClass().getResource("/livraria/views/DashBoard.fxml"));
                Parent dashboard=carregador.load();
+
                Scene cenario= new Scene(dashboard);
                Stage janela=(Stage)((Node)event.getSource()).getScene().getWindow();
                janela.setTitle("CarnBook");
                DashBoardController controller= carregador.getController();//Para passar dados de Login na DashBoard
+
                janela.setScene(cenario);
 
 
 
            }catch (IOException erro){
                System.out.println("Erro ao tentar mostrar a View\n"+erro.getMessage());
+               erro.getStackTrace();
            }
 
           }

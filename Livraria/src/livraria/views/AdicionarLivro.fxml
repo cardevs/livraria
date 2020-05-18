@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 
-
-<AnchorPane prefHeight="338.0" prefWidth="553.0" style="-fx-background-color: #04668D;" stylesheets="@../resources/styles/estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.AdicionarLivroController">
+<AnchorPane prefHeight="338.0" prefWidth="553.0" style="-fx-background-color: primaria;" stylesheets="@../resources/styles/estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.AdicionarLivroController">
    <children>
       <Rectangle fx:id="capa" arcHeight="5.0" arcWidth="5.0" fill="#e7ebf0" height="147.0" layoutX="31.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
       <GridPane hgap="10.0" layoutX="191.0" layoutY="22.0" prefHeight="136.0" prefWidth="338.0">

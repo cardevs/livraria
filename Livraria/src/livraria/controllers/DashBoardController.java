@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import livraria.classes.LivrariaStrategy;
@@ -23,6 +24,18 @@ public class DashBoardController {
 
     @FXML
     private AnchorPane ancorCentro;
+    @FXML
+    private HBox boxMaisRecentes;
+
+
+
+    public void initialize(){
+
+
+        carregarDados();
+
+    }
+
 
     @FXML
     void mostrarResumo(ActionEvent event) {
@@ -57,7 +70,7 @@ public class DashBoardController {
             LivrariaStrategy.selecionarIcon(janela);
             janela.setScene(cenario);
             janela.setResizable(false);
-janela.show();
+            janela.show();
 
         }catch (IOException erro){
 
@@ -69,5 +82,36 @@ janela.show();
 
     }
 
+    public HBox getBoxMaisRecentes() {
+        return boxMaisRecentes;
+    }
+    public void setBoxMaisRecentes(HBox boxMaisRecentes) {
+        this.boxMaisRecentes = boxMaisRecentes;
+    }
+
+    private void carregarDados()//Esta funcao carrega dados da Base de Dados na DashBoard
+
+    {
+
+        for (int i=0; i<10; i++) //Teste para adicionar Livros Recentes
+        {
+
+            try {
+                FXMLLoader carregador= new FXMLLoader();
+                carregador.setLocation(getClass().getResource("/livraria/views/LivroRecente.fxml"));
+                Parent livro=carregador.load();
+                LivroRecenteController controller= carregador.getController();
+                controller.adicionarDados(String.valueOf(i),String.valueOf(i));
+                boxMaisRecentes.getChildren().add(livro);
+            }
+            catch (IOException erro){
+
+                System.out.println("Erro ao tentar adicionar Livro Mais recente");
+            }
+
+
+        }
+
+    }
 
 }

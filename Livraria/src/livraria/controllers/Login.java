@@ -172,7 +172,6 @@ public class Login {
           else {
 
               JOptionPane.showMessageDialog(null,"Nao foi possivel efectuar o Login");
-
           }
     }
     @FXML

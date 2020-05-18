@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef6954-18f7-44dd-bf2a-222c3ae9aff2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/LivroRecenteController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/livraria/livraria/resources/img/614745.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/livraria/livraria/views/LivroRecente.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/resources/img/614745.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/views/LivroRecente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/classes/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/livraria.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/livraria.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/DashBoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/DashBoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/model/core/ConexaoDAO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/model/core/SQLiteBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/model/core/SQLiteBD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/views/AdicionarLivro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/views/AdicionarLivro.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/views/DashBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/views/DashBoard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/controllers/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/model/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/classes/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/model/core/SQLiteBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/model/core/SQLiteBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/views/AdicionarLivro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/views/AdicionarLivro.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/views/DashBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/views/DashBoard.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,47 +28,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/livraria/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/livraria/classes/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="168">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/livraria/controllers/Login.java">
+        <entry file="file://$PROJECT_DIR$/src/livraria/classes/Utilizador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="166" column="36" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#abrirChat#0;class#DashBoardController#0" />
-                <element signature="method#adicionarLivro#0;class#DashBoardController#0" />
-                <element signature="e#1962#1963#0" expanded="true" />
-                <element signature="e#2000#2001#0" expanded="true" />
-                <element signature="e#2060#2061#0" expanded="true" />
-                <element signature="e#2114#2115#0" expanded="true" />
-                <element signature="e#2279#2729#1" />
-                <element signature="e#2290#2672#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/livraria/model/UtilizadorModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
@@ -84,19 +55,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/livraria/model/LoginDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#1431#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/livraria/classes/Pessoa.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/livraria/model/core/ConexaoDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/livraria/model/core/SQLiteBD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#desconectar#0;class#SQLiteBD#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/livraria/views/LivroRecente.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
+            <state relative-caret-position="264">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,18 +123,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros4.png">
           <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/livraria/controllers/ChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -146,9 +149,10 @@
         <option value="$PROJECT_DIR$/src/livraria/Main.java" />
         <option value="$PROJECT_DIR$/src/livraria/model/core/SQLiteBD.java" />
         <option value="$PROJECT_DIR$/src/livraria/views/LivroRecente.fxml" />
-        <option value="$PROJECT_DIR$/src/livraria/controllers/Login.java" />
         <option value="$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java" />
         <option value="$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java" />
+        <option value="$PROJECT_DIR$/src/livraria/controllers/Login.java" />
+        <option value="$PROJECT_DIR$/src/livraria/classes/Pessoa.java" />
       </list>
     </option>
   </component>
@@ -166,8 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +193,13 @@
               <item name="Livraria" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="livraria" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -201,6 +210,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,7 +277,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -322,6 +333,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/livraria/resources/styles/estilos.css">
@@ -332,12 +357,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/views/Chat.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/database/livraria.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -347,32 +372,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/views/DashBoard.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/model/core/ConexaoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/model/core/SQLiteBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#conectar#0;class#SQLiteDB#0;class#SQLiteBD#0" />
-            <element signature="method#desconectar#0;class#SQLiteBD#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/model/core/ConexaoDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -388,42 +395,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/views/Login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2688">
           <caret line="133" column="26" lean-forward="true" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/views/AdicionarLivro.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/controllers/ChatController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="166" column="36" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -439,42 +429,46 @@
     <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros5.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java">
+    <entry file="file://$PROJECT_DIR$/src/livraria/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="792">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/views/LivroRecente.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="1200">
           <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#abrirChat#0;class#DashBoardController#0" />
             <element signature="method#adicionarLivro#0;class#DashBoardController#0" />
-            <element signature="e#1962#1963#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#2060#2061#0" expanded="true" />
-            <element signature="e#2114#2115#0" expanded="true" />
-            <element signature="e#2279#2729#1" />
-            <element signature="e#2290#2672#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3624">
+          <caret line="173" column="86" selection-start-line="173" selection-start-column="86" selection-end-line="173" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/classes/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/classes/Utilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -482,6 +476,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/model/core/ConexaoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/model/core/SQLiteBD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#desconectar#0;class#SQLiteBD#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/views/LivroRecente.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/model/LoginDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#1431#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/classes/Pessoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>

@@ -7,7 +7,6 @@ import java.sql.SQLException;
 
 
 public class SQLiteBD {
-
         protected Connection conection=null;
         public Connection conectar() {
             try{

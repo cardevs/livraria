@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package livraria.model;
+package livraria.classes;
 import livraria.model.core.ConexaoDB;
 /**
  *

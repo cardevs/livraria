@@ -25,7 +25,7 @@ public class Main extends Application{
       janelaPrincipal=stage;
       try{
           // JOptionPane.showMessageDialog(null, "We are CarneirosDev!!!!!");
-          Parent raiz=FXMLLoader.load(getClass().getResource("/livraria/views/AdicionarLivro.fxml"));
+          Parent raiz=FXMLLoader.load(getClass().getResource("/livraria/views/DashBoard.fxml"));
           Scene cenario= new Scene(raiz);
           janelaPrincipal.setScene(cenario);
           LivrariaStrategy.selecionarIcon(janelaPrincipal);

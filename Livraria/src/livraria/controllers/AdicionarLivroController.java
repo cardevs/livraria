@@ -71,36 +71,24 @@ capa.setStroke(Color.TRANSPARENT);
     @FXML
     void inserirImagem(){
 
-File caminho= new File(String.valueOf(getClass().getResource("/imagens/")));
+File caminho= new File(String.valueOf(getClass().getResource("/imagens")));
  String caminho2= caminho.getAbsolutePath().replace("null","imagens\\");
+      //  System.out.println(caminho.getAbsolutePath());
         System.out.println(caminho2);
         FileChooser escolherFicheiro= new FileChooser();
         escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png"));
-      /*  File ficheiro=escolherFicheiro.showOpenDialog(null);
+        File ficheiro=escolherFicheiro.showOpenDialog(null);
 
       try {
-          Path source = Paths.get(ficheiro.getAbsolutePath());
-          Path destination = Paths.get(caminho2+""+ficheiro.getName());
+          Path source = Paths.get(ficheiro.getAbsolutePath()); c
+          Path destination = Paths.get("/imagens/"+ficheiro.getName());
           Files.copy(source, destination);
       } catch (IOException erro){
 
           System.out.println(erro.getMessage());
-      }*/
-        capa.setFill(new ImagePattern(new Image("/livraria/resources/img/nome.png")));
+      }
+        capa.setFill(new ImagePattern(new Image("/imagens/chima.png")));
 
-
-
-/*
-
-        //escolherFicheiro.showSaveDialog(null);
-        System.out.println(ficheiro.getAbsolutePath());
-        System.out.println(novo.getAbsolutePath());
-        System.out.println(ficheiro.getPath());
-        System.out.println(ficheiro.getName());
-        //capa.setFill(new ImagePattern(new Image(ficheiro.getAbsolutePath().replace("/","//"))));
-
-
-*/
     }
 
 }

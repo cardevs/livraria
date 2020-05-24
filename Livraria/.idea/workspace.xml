@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef6954-18f7-44dd-bf2a-222c3ae9aff2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/livraria/resources/img/nome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/chima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/chima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/resources/img/966487.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/resources/img/chima.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/livraria.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/livraria.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/chima2.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/chima.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/hFJ2vUjw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/752143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/9fa059f099f9c1bbea90c441514a686c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/afd579423d899ffe1c23f2d2471c193f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/hFJ2vUjw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/nome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagens/unnamed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/AdicionarLivroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/AdicionarLivroController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/views/AdicionarLivro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/views/AdicionarLivro.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/LivroRecenteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/LivroRecenteController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/views/AdicionarLivro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/views/AdicionarLivro.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,25 +38,49 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="88" column="80" selection-start-line="88" selection-start-column="80" selection-end-line="88" selection-end-column="80" />
+            <state relative-caret-position="173">
+              <caret line="82" column="64" selection-start-line="82" selection-start-column="64" selection-end-line="82" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/nome.png">
+        <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/25788b7a08f5eb764fec138394f38cc7.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros4.png">
+        <entry file="file://$PROJECT_DIR$/database/chima.png">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#abrirChat#0;class#DashBoardController#0" />
+                <element signature="method#adicionarLivro#0;class#DashBoardController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -71,11 +105,11 @@
         <option value="$PROJECT_DIR$/src/livraria/views/AdicionarLivro.fxml" />
         <option value="$PROJECT_DIR$/src/livraria/model/core/SQLiteBD.java" />
         <option value="$PROJECT_DIR$/src/livraria/views/LivroRecente.fxml" />
-        <option value="$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java" />
         <option value="$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java" />
         <option value="$PROJECT_DIR$/src/livraria/controllers/Login.java" />
         <option value="$PROJECT_DIR$/src/livraria/classes/Pessoa.java" />
         <option value="$PROJECT_DIR$/src/livraria/Main.java" />
+        <option value="$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java" />
         <option value="$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java" />
       </list>
     </option>
@@ -104,33 +138,31 @@
             <path>
               <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
               <item name="Livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="livraria" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="imagens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
@@ -140,8 +172,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,6 +188,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projectos\CarneiroDev\livraria\Livraria\src\livraria\resources\img" />
+      <recent name="D:\Projectos\CarneiroDev\livraria\Livraria\imagens" />
       <recent name="D:\Projectos\CarneiroDev\livraria\Livraria" />
       <recent name="D:\Projectos\CarneiroDev\livraria\Livraria\lib" />
     </key>
@@ -207,9 +241,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29127517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -218,13 +251,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14852941" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14852941" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
@@ -338,21 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#abrirChat#0;class#DashBoardController#0" />
-            <element signature="method#adicionarLivro#0;class#DashBoardController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/controllers/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3624">
@@ -403,16 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/model/LoginDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -438,63 +446,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/hFJ2vUjw.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/chima2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/hFJ2vUjw.png" />
     <entry file="file://$PROJECT_DIR$/database/wp4350853.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/imagens/afd579423d899ffe1c23f2d2471c193f.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagens/nome.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagens/hFJ2vUjw.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livro1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livro2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/imagens/afd579423d899ffe1c23f2d2471c193f.png" />
+    <entry file="file://$PROJECT_DIR$/imagens/hFJ2vUjw.png" />
     <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/addImage.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imagens/livros4.png" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/image/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="1117" selection-start-line="1117" selection-end-line="1117" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/nome.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livro3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livro2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livros4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/nuncaDesista.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imagens/unnamed.png" />
+    <entry file="file://$PROJECT_DIR$/imagens/nome.png" />
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/614745.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/addImage.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/livro1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="88" column="80" selection-start-line="88" selection-start-column="80" selection-end-line="88" selection-end-column="80" />
+        <state relative-caret-position="173">
+          <caret line="82" column="64" selection-start-line="82" selection-start-column="64" selection-end-line="82" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/resources/img/25788b7a08f5eb764fec138394f38cc7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/chima.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#abrirChat#0;class#DashBoardController#0" />
+            <element signature="method#adicionarLivro#0;class#DashBoardController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/livraria/controllers/LivroRecenteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

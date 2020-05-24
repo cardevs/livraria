@@ -30,7 +30,11 @@ public class LivroRecenteController {
     public void initialize(){
 
         img.setStyle("-fx-background-color: #ffffff");
-        img.setFill(new ImagePattern(new Image("/livraria/resources/img/livros4.png")));
+        //img.setFill(new ImagePattern(new Image("/livraria/resources/img/livros4.png")));
+        img.setFill(new ImagePattern(new Image("/database/chima.png")));
+
+        Image nova=new Image("/imagens/chima.png");
+
         img.setOnMouseClicked(event -> {
 
             JOptionPane.showMessageDialog(null,livroAutor.getText());

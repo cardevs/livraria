@@ -22,7 +22,11 @@ import javax.swing.*;
 import java.io.IOException;
 import livraria.model.core.ConexaoDB;
 import java.sql.Connection;
-import livraria.model.LoginDAO;
+import java.sql.Date;
+import java.time.LocalDate;
+import livraria.dao.LoginDAO;
+import livraria.dao.PessoaDAO;
+import livraria.model.PessoaModel;
 public class Login {
 
      @FXML
@@ -136,8 +140,7 @@ public class Login {
         transicao2.play(); 
           transicao2.setOnFinished(event->{
                transicoes();//Recursividade
-        });
-        
+        });        
     }
     
       @FXML
@@ -145,7 +148,8 @@ public class Login {
         LoginDAO vloginDaO= new LoginDAO(); //Instancia de LoginDao
         String usuarioName=usernameLogin.getText();//Guardando os valores vindo do TextField username
         String usuarioPass=passwordLogin.getText();//Guardando os valores vindo do TextField password
-/*Verifica se os dados estão corretos.*/
+
+        /*Verifica se os dados estão corretos.*/
           if(vloginDaO.entrar(usuarioName, usuarioPass))//Ensira a condicao se os dados recuperados da BD forem todos certos
           {
 
@@ -167,7 +171,6 @@ public class Login {
                System.out.println("Erro ao tentar mostrar a View\n"+erro.getMessage());
                erro.getStackTrace();
            }
-
           }
           else {
 
@@ -176,6 +179,30 @@ public class Login {
     }
     @FXML
     void registar(ActionEvent event) {
-        System.out.println("Funcionando!");
-    }
+         PessoaModel pessoaModel=new PessoaModel();
+            try {
+                    /*Pegando os dados dos TextFields e DatePickers*/
+                    pessoaModel.setNome(usernameRegisto.getText());
+                    pessoaModel.setSobrenome(sobrenomeRegisto.getText());
+                    pessoaModel.setEmail(emailRegisto.getText());
+                    String data;
+                    data = String.valueOf(dataAniversarioRegisto.getValue());/*Converte os DatePickers em Strings*/
+                    pessoaModel.setAniversario(data);
+                    pessoaModel.setSenha(senhaRegisto.getText());
+                    String test_senha=rSenhaRegisto.getText();
+                    
+                        /*Verifica se as senhas inseridas são iguais ou não.*/
+                    if (pessoaModel.getSenha().equals(test_senha)) {
+                            PessoaDAO pessoaDAO = new PessoaDAO();
+                            pessoaDAO.registrarPessoa(pessoaModel);  
+                            JOptionPane.showMessageDialog(null,"Usuario Criado com Sucesso!");
+                            System.out.println("Funcionando!");
+                    } else {
+                        JOptionPane.showMessageDialog(null,"As senhas não são iguais.");
+                        System.out.println("Senha não são iguais.");
+                    }
+                } catch (Exception e) {
+                        e.printStackTrace();
+                  }
+}
 }

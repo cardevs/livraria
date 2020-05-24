@@ -4,16 +4,24 @@
  * and open the template in the editor.
  */
 package livraria.model;
-import livraria.model.core.ConexaoDB;
 /**
  *
  * @author Adamastor Chimalange
  */
-public class Login {
+public class LoginModel {
+    private int id;
     private String usuario;
     private String senha;
 
-    public Login() {
+    public LoginModel() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUsuario() {

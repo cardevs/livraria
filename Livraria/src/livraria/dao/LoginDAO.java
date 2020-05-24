@@ -2,12 +2,14 @@
 Esta classe é Responsavel por Executar todos os metódos e função do processo de 
 Login de um usuário.
 */
-package livraria.model;
+package livraria.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import livraria.model.PessoaModel;
 import livraria.model.core.ConexaoDB;
 
 /**
@@ -17,7 +19,7 @@ import livraria.model.core.ConexaoDB;
  * @author Edson Kay
  */
 public class LoginDAO {
-/*Metódo responsavél por verificar a senha e nome do Usuario na Base de Dados*/
+/*Método responsavél por verificar a senha e nome do Usuario na Base de Dados*/
      public boolean entrar( String usuarioName, String usuarioPass)
     {
         Connection conn=ConexaoDB.getConnection();//Abertura da conexão com a base de Dados

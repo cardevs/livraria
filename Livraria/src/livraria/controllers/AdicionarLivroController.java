@@ -71,8 +71,8 @@ capa.setStroke(Color.TRANSPARENT);
     @FXML
     void inserirImagem(){
 
-File caminho= new File(String.valueOf(getClass().getResource("/imagens")));
- String caminho2= caminho.getAbsolutePath().replace("null","imagens\\");
+        File caminho= new File(String.valueOf(getClass().getResource("/imagens")));
+         String caminho2= caminho.getAbsolutePath().replace("null","imagens\\");
       //  System.out.println(caminho.getAbsolutePath());
         System.out.println(caminho2);
         FileChooser escolherFicheiro= new FileChooser();
@@ -80,7 +80,7 @@ File caminho= new File(String.valueOf(getClass().getResource("/imagens")));
         File ficheiro=escolherFicheiro.showOpenDialog(null);
 
       try {
-          Path source = Paths.get(ficheiro.getAbsolutePath()); c
+          Path source = Paths.get(ficheiro.getAbsolutePath());
           Path destination = Paths.get("/imagens/"+ficheiro.getName());
           Files.copy(source, destination);
       } catch (IOException erro){

@@ -2,13 +2,21 @@
 
 /*Definicao de cores universais*/
 
-* {
+/* {
     primaria : #028090;
     secundaria : #00A896;
     tercearia: #02C39A;
     quartearia: #F0F3BD;
-}
+}*/
 
+
+
+* {
+    primaria : #2C1735;
+    secundaria : #4E295B;
+    tercearia: #02C39A;
+    quartearia: #F0F3BD;
+}
 
 .button {
     -fx-background-color: quartearia;
@@ -49,5 +57,14 @@
 
 
 -fx-background-color: #FFE300;
+}
+
+
+.botaoDashboard{
+-fx-background-color: transparent;
+}
+
+.botaoDashboard:hover{
+-fx-background-color: #653576;
 }
 

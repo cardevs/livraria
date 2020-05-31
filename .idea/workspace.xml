@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a6ac8fb-cb96-4032-bad6-6169891045cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Livraria/src/livraria/dao/PessoaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Livraria/src/livraria/model/LoginModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Livraria/src/livraria/model/PessoaModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Livraria/src/livraria/resources/img/768px-Search_Icon.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Livraria/src/livraria/resources/img/unnamed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Livraria/src/livraria/views/Biblioteca.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livraria/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/database/livrari.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/database/livraria.db" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/database/livraria.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/controllers/DashBoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/controllers/DashBoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/controllers/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/controllers/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/model/LoginDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/model/UtilizadorModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/model/core/ConexaoDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/model/core/ConexaoDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/views/DashBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/out/production/livraria/livraria/views/DashBoard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livraria/src/livraria/controllers/AdicionarLivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/src/livraria/controllers/AdicionarLivroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/src/livraria/controllers/DashBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/src/livraria/controllers/DashBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/src/livraria/controllers/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/src/livraria/controllers/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/src/livraria/model/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/src/livraria/dao/LoginDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/src/livraria/model/UtilizadorModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/src/livraria/model/core/ConexaoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/src/livraria/model/core/ConexaoDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria/src/livraria/views/DashBoard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria/src/livraria/views/DashBoard.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,24 +62,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Livraria/src/livraria/model/LoginDAO.java">
+        <entry file="file://$PROJECT_DIR$/Livraria/src/livraria/controllers/AdicionarLivroController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="408">
+              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
               <folding>
-                <element signature="e#0#1431#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Livraria/src/livraria/controllers/AdicionarLivroController.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -73,6 +92,7 @@
       <list>
         <option value="$PROJECT_DIR$/Livraria/src/livraria/model/core/SQLiteBD.java" />
         <option value="$PROJECT_DIR$/Livraria/src/livraria/controllers/AdicionarLivroController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -110,7 +130,7 @@
               <item name="livraria" type="462c0819:PsiDirectoryNode" />
               <item name="Livraria" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
@@ -118,30 +138,13 @@
               <item name="Livraria" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="livraria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="Livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,9 +179,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -209,6 +211,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Livraria/src/livraria/model/LoginDAO.java" />
     <entry file="file://$PROJECT_DIR$/Livraria/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -226,22 +229,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Livraria/src/livraria/model/LoginDAO.java">
+    <entry file="file://$PROJECT_DIR$/Livraria/src/livraria/controllers/AdicionarLivroController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="408">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
           <folding>
-            <element signature="e#0#1431#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Livraria/src/livraria/controllers/AdicionarLivroController.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>

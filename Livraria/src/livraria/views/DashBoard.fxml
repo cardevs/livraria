@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXProgressBar?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,70 +10,56 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="911.0" style="-fx-background-color: #DEDEDE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.DashBoardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="911.0" style="-fx-background-color: #2C1735;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.DashBoardController">
    <children>
-      <Pane prefHeight="538.0" prefWidth="190.0" styleClass="painelFundo" stylesheets="@../resources/styles/estilos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane prefHeight="538.0" prefWidth="190.0" style="-fx-background-color: #4E295B;" styleClass="painelFundo" stylesheets="@../resources/styles/estilos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="538.0" prefWidth="190.0" spacing="15.0">
                <children>
                   <HBox prefHeight="48.0" prefWidth="190.0" />
                   <Circle fill="WHITE" radius="33.0" stroke="WHITE" strokeType="INSIDE" />
                   <Label text="Nome do usario" textFill="#f0f3bd" />
-                  <Separator prefWidth="200.0" />
-                  <JFXButton fx:id="btnResumo" alignment="BASELINE_LEFT" graphicTextGap="2.0" onAction="#mostrarResumo" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Resumo" textFill="#f0f3bd">
-                     <graphic>
-                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../resources/icon/overview_96px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                  </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="2.0" layoutX="27.0" layoutY="145.0" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Biblioteca" textFill="#f0f3bd">
-                     <graphic>
-                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../resources/icon/book_shelf_96px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                  </JFXButton>
-                  <JFXButton fx:id="btnChat" alignment="BASELINE_LEFT" graphicTextGap="2.0" layoutX="10.0" layoutY="252.0" onAction="#abrirChat" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Chat" textFill="#f0f3bd">
-                     <graphic>
-                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../resources/icon/chat_bubble_96px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                  </JFXButton>
-                  <Separator layoutX="10.0" layoutY="188.0" prefWidth="200.0" />
-                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="2.0" layoutX="10.0" layoutY="252.0" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Definições" textFill="#f0f3bd">
-                     <graphic>
-                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../resources/icon/settings_96px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                  </JFXButton>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#mostrarResumo" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Resumo" textAlignment="CENTER" textFill="#f0f3bd">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/icon/overview_96px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarBiblioteca" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Biblioteca" textAlignment="CENTER" textFill="#f0f3bd">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/icon/book_shelf_96px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="49.0" mnemonicParsing="false" onAction="#abrirChat" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Chat" textAlignment="CENTER" textFill="#f0f3bd">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/icon/chat_bubble_96px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
                   <ImageView fitHeight="66.0" fitWidth="48.0" onMouseClicked="#adicionarLivro" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/icon/add_96px.png" />
@@ -90,65 +72,6 @@
             </VBox>
          </children>
       </Pane>
-      <AnchorPane fx:id="ancorCentro" prefHeight="521.0" prefWidth="701.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
-         <children>
-            <AnchorPane layoutX="12.0" prefHeight="200.0" prefWidth="679.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <Label layoutX="80.0" layoutY="49.0" prefHeight="101.0" prefWidth="202.0" text="Nunca Desista de Seus Sonho" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="49.400000000000006" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="418.6" AnchorPane.topAnchor="49.0">
-                     <font>
-                        <Font name="Arial Black" size="16.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="164.0" fitWidth="124.0" layoutX="526.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="52.98400115966797" AnchorPane.topAnchor="18.0">
-                     <image>
-                        <Image url="@../resources/img/nuncaDesista.jpg" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutY="236.0" prefHeight="254.0" prefWidth="679.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <children>
-                  <Label layoutX="27.0" layoutY="14.0" text="Mais Recentes">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </Label>
-                  <ScrollPane fx:id="maisRecenteScroll" layoutX="8.0" layoutY="42.0" prefHeight="208.0" prefWidth="690.0" style="-fx-background-color: #ffffff;" vbarPolicy="NEVER" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="3.0">
-                     <content>
-                        <HBox fx:id="boxMaisRecentes" alignment="CENTER_LEFT" prefHeight="191.0" prefWidth="694.0" spacing="10.0" style="-fx-background-color: transparent;">
-                           <children>
-                              <VBox alignment="TOP_CENTER" layoutX="392.0" layoutY="10.0" prefHeight="200.0" prefWidth="127.0">
-                                 <children>
-                                    <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../resources/img/nuncaDesista.jpg" />
-                                       </image>
-                                    </ImageView>
-                                    <Label text="Nunca Desista de seus sonhos">
-                                       <font>
-                                          <Font name="System Bold" size="9.0" />
-                                       </font>
-                                    </Label>
-                                    <Label layoutX="10.0" layoutY="160.0" text="Augusto Cury">
-                                       <font>
-                                          <Font size="9.0" />
-                                       </font>
-                                    </Label>
-                                    <JFXProgressBar />
-                                    <Label text="50%">
-                                       <font>
-                                          <Font size="9.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </VBox>
-                           </children>
-                        </HBox>
-                     </content>
-                  </ScrollPane>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
+      <AnchorPane fx:id="ancorCentro" prefHeight="521.0" prefWidth="701.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
    </children>
 </AnchorPane>

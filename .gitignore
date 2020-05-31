@@ -1,2 +1,4 @@
 /Livraria/nbproject/private/
 /Livraria/build/
+*.db
+*.log

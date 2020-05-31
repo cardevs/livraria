@@ -6,15 +6,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import livraria.classes.LivrariaStrategy;
 
 import javax.swing.*;
-import javax.swing.text.Style;
 import java.io.IOException;
 
 public class DashBoardController {
@@ -30,8 +27,6 @@ public class DashBoardController {
 
 
     public void initialize(){
-
-
         carregarDados();
 
     }
@@ -39,7 +34,15 @@ public class DashBoardController {
 
     @FXML
     void mostrarResumo(ActionEvent event) {
-
+        ancorCentro.getChildren().clear();
+        try {
+            FXMLLoader carregador= new FXMLLoader();
+            carregador.setLocation(getClass().getResource("/livraria/views/Resumo.fxml"));
+            AnchorPane resumo=carregador.load();
+            ancorCentro.getChildren().add(resumo);
+        }catch (IOException erro){
+            System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
+        }
 
 }
 
@@ -90,27 +93,26 @@ public class DashBoardController {
     }
 
     private void carregarDados()//Esta funcao carrega dados da Base de Dados na DashBoard
-
     {
 
-        for (int i=0; i<10; i++) //Teste para adicionar Livros Recentes
-        {
+        System.out.println("Funcionando!!!");
+    }
 
-            try {
-                FXMLLoader carregador= new FXMLLoader();
-                carregador.setLocation(getClass().getResource("/livraria/views/LivroRecente.fxml"));
-                Parent livro=carregador.load();
-                LivroRecenteController controller= carregador.getController();
-                controller.adicionarDados(String.valueOf(i),String.valueOf(i));
-                boxMaisRecentes.getChildren().add(livro);
-            }
-            catch (IOException erro){
+    @FXML
+    void mostrarBiblioteca(){
 
-                System.out.println("Erro ao tentar adicionar Livro Mais recente");
-            }
-
-
+        ancorCentro.getChildren().clear();
+        try {
+            FXMLLoader carregador= new FXMLLoader();
+            carregador.setLocation(getClass().getResource("/livraria/views/Livraria.fxml"));
+            AnchorPane biblioteca=carregador.load();
+            ancorCentro.getChildren().add(biblioteca);
+        }catch (IOException erro){
+            System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
         }
+
+
+
 
     }
 

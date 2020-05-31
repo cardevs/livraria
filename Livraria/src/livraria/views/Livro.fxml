@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="150.0" prefWidth="219.0" style="-fx-background-color: primaria;" stylesheets="@../resources/styles/estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.views.LivroController">
+   <children>
+      <HBox prefHeight="150.4" prefWidth="221.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="capa" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/unnamed.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="125.0" spacing="20.0">
+               <children>
+                  <Label fx:id="titulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="138.0" text="titulo" textAlignment="CENTER" textFill="WHITE" />
+                  <Label fx:id="autor" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="16.0" prefWidth="134.0" text="Autor" textFill="WHITE" />
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="125.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#verDados" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-radius: 3;" stylesheets="@../resources/styles/estilos.css" text="ver" textFill="WHITE">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#inserirNaLista" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: secundaria;" stylesheets="@../resources/styles/estilos.css" text="Adicionar" textFill="WHITE">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

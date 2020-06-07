@@ -29,6 +29,9 @@
                            <font>
                               <Font size="9.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#inserirNaLista" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: secundaria;" stylesheets="@../resources/styles/estilos.css" text="Adicionar" textFill="WHITE">
                            <font>

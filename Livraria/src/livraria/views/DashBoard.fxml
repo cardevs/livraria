@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -13,65 +14,71 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="911.0" style="-fx-background-color: #2C1735;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.DashBoardController">
    <children>
-      <Pane prefHeight="538.0" prefWidth="190.0" style="-fx-background-color: #4E295B;" styleClass="painelFundo" stylesheets="@../resources/styles/estilos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <VBox alignment="TOP_CENTER" prefHeight="538.0" prefWidth="190.0" spacing="15.0">
+      <BorderPane prefHeight="538.0" prefWidth="911.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="538.0" prefWidth="190.0" style="-fx-background-color: #4E295B;" styleClass="painelFundo" stylesheets="@../resources/styles/estilos.css" BorderPane.alignment="CENTER">
                <children>
-                  <HBox prefHeight="48.0" prefWidth="190.0" />
-                  <Circle fill="WHITE" radius="33.0" stroke="WHITE" strokeType="INSIDE" />
-                  <Label text="Nome do usario" textFill="#f0f3bd" />
-                  <VBox prefHeight="200.0" prefWidth="100.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="538.0" prefWidth="190.0" spacing="15.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#mostrarResumo" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Resumo" textAlignment="CENTER" textFill="#f0f3bd">
-                           <graphic>
-                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/icon/overview_96px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
+                        <HBox prefHeight="48.0" prefWidth="190.0" />
+                        <Circle fill="WHITE" radius="33.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Label text="Nome do usario" textFill="#f0f3bd" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#mostrarResumo" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Resumo" textAlignment="CENTER" textFill="#f0f3bd">
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/icon/overview_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarBiblioteca" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Biblioteca" textAlignment="CENTER" textFill="#f0f3bd">
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/icon/book_shelf_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="49.0" mnemonicParsing="false" onAction="#abrirChat" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Chat" textAlignment="CENTER" textFill="#f0f3bd">
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/icon/chat_bubble_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="66.0" fitWidth="48.0" onMouseClicked="#adicionarLivro" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icon/add_96px.png" />
+                           </image>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mostrarBiblioteca" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Biblioteca" textAlignment="CENTER" textFill="#f0f3bd">
-                           <graphic>
-                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/icon/book_shelf_96px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="49.0" mnemonicParsing="false" onAction="#abrirChat" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Chat" textAlignment="CENTER" textFill="#f0f3bd">
-                           <graphic>
-                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../resources/icon/chat_bubble_96px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
+                        </ImageView>
                      </children>
                   </VBox>
-                  <ImageView fitHeight="66.0" fitWidth="48.0" onMouseClicked="#adicionarLivro" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../resources/icon/add_96px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
                </children>
-            </VBox>
-         </children>
-      </Pane>
-      <AnchorPane fx:id="ancorCentro" prefHeight="521.0" prefWidth="701.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            </Pane>
+         </left>
+         <center>
+            <AnchorPane fx:id="ancorCentro" prefHeight="521.0" prefWidth="701.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
    </children>
 </AnchorPane>

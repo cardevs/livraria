@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="521.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.ChatController">
+<AnchorPane prefHeight="521.0" prefWidth="701.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.ChatController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" layoutX="522.0" prefHeight="522.0" prefWidth="179.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="5.6843418860808015E-14" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" layoutX="522.0" prefHeight="522.0" prefWidth="179.0" stylesheets="@../resources/styles/estilos.css" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="5.6843418860808015E-14" AnchorPane.topAnchor="10.0">
          <content>
-            <AnchorPane prefHeight="200.0" prefWidth="177.0" style="-fx-background-color: primaria;" stylesheets="@../resources/styles/estilos.css">
+            <AnchorPane prefHeight="200.0" prefWidth="177.0" style="-fx-background-color: secundaria;" stylesheets="@../resources/styles/estilos.css">
                <children>
                   <VBox prefHeight="522.0" prefWidth="179.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
@@ -33,8 +33,8 @@
             </AnchorPane>
          </content>
       </ScrollPane>
-      <TextField layoutX="14.0" layoutY="472.0" prefHeight="30.0" prefWidth="434.0" promptText="Insira a mensagem" AnchorPane.bottomAnchor="18.6" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="252.60000000000002" />
-      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="462.0" layoutY="472.0" onMouseClicked="#enviarMensagem" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="200.0">
+      <TextField layoutX="14.0" layoutY="472.0" prefHeight="30.0" prefWidth="434.0" promptText="Insira a mensagem" style="-fx-background-color: secundaria;" styleClass="labeTExt" stylesheets="@../resources/styles/estilos.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="252.60000000000002" />
+      <ImageView fitHeight="30.0" fitWidth="39.0" layoutX="462.0" layoutY="472.0" onMouseClicked="#enviarMensagem" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="200.0">
          <image>
             <Image url="@../resources/icon/sent_24px.png" />
          </image>
@@ -42,12 +42,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ScrollPane layoutX="11.0" layoutY="1.0" prefHeight="463.0" prefWidth="502.0" AnchorPane.bottomAnchor="56.80000000000001" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="187.60000000000002" AnchorPane.topAnchor="1.0">
+      <ScrollPane hbarPolicy="NEVER" layoutX="11.0" layoutY="1.0" prefHeight="463.0" prefWidth="502.0" stylesheets="@../resources/styles/estilos.css" vbarPolicy="NEVER" AnchorPane.bottomAnchor="56.80000000000001" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="187.60000000000002" AnchorPane.topAnchor="10.0">
         <content>
-          <AnchorPane minHeight="458.0" minWidth="498.0" style="-fx-background-color: quartearia;" stylesheets="@../resources/styles/estilos.css">
+          <AnchorPane minHeight="458.0" minWidth="498.0" style="-fx-background-color: secundaria;" stylesheets="@../resources/styles/estilos.css">
                <children>
                   <Label alignment="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="38.0" prefWidth="195.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="          rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr wrwrwrw wrwrwrwrwr wrwrwrwrw wrwrwrwrwrwr" textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS" wrapText="true" />
-                  <Label alignment="CENTER" layoutX="288.0" layoutY="59.0" prefHeight="38.0" prefWidth="195.0" style="-fx-background-color: #028090; -fx-background-radius: 10;" text="          rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr wrwrwrw wrwrwrwrwr wrwrwrwrw wrwrwrwrwrwr" textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="288.0" layoutY="59.0" prefHeight="38.0" prefWidth="195.0" style="-fx-background-color: #657AAD; -fx-background-radius: 10;" text="          rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr wrwrwrw wrwrwrwrwr wrwrwrwrw wrwrwrwrwrwr" textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS" wrapText="true" />
                </children>
             </AnchorPane>
         </content>

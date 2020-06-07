@@ -28,7 +28,7 @@ public class DashBoardController {
 
     public void initialize(){
         carregarDados();
-
+//ancorCentro.setTopAnchor();
     }
 
 
@@ -39,6 +39,11 @@ public class DashBoardController {
             FXMLLoader carregador= new FXMLLoader();
             carregador.setLocation(getClass().getResource("/livraria/views/Resumo.fxml"));
             AnchorPane resumo=carregador.load();
+
+           ancorCentro.setTopAnchor(resumo,0.0);
+            ancorCentro.setLeftAnchor(resumo,0.0);
+            ancorCentro.setRightAnchor(resumo,0.0);
+          ancorCentro.setBottomAnchor(resumo,0.0);
             ancorCentro.getChildren().add(resumo);
         }catch (IOException erro){
             System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
@@ -54,7 +59,13 @@ public class DashBoardController {
         FXMLLoader carregador= new FXMLLoader();
         carregador.setLocation(getClass().getResource("/livraria/views/Chat.fxml"));
     AnchorPane chat=carregador.load();
-        ancorCentro.getChildren().add(chat);
+
+
+        ancorCentro.setTopAnchor(chat,0.0);
+        ancorCentro.setLeftAnchor(chat,0.0);
+        ancorCentro.setRightAnchor(chat,0.0);
+        ancorCentro.setBottomAnchor(chat,0.0);
+    ancorCentro.getChildren().add(chat);
     }catch (IOException erro){
         System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
 }
@@ -101,14 +112,24 @@ public class DashBoardController {
     @FXML
     void mostrarBiblioteca(){
 
-        ancorCentro.getChildren().clear();
+        ancorCentro.getChildren().clear();//Para limpar todo conteudo
         try {
             FXMLLoader carregador= new FXMLLoader();
             carregador.setLocation(getClass().getResource("/livraria/views/Livraria.fxml"));
             AnchorPane biblioteca=carregador.load();
+
+            /*
+            * A seguir tem o codigo para definir as constraint que permitem a Responsividade
+            *
+            * */
+            ancorCentro.setTopAnchor(biblioteca,0.0);
+            ancorCentro.setLeftAnchor(biblioteca,0.0);
+            ancorCentro.setRightAnchor(biblioteca,0.0);
+            ancorCentro.setBottomAnchor(biblioteca,0.0);
             ancorCentro.getChildren().add(biblioteca);
         }catch (IOException erro){
             System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
+            erro.printStackTrace();
         }
 
 

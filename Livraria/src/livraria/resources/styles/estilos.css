@@ -68,3 +68,75 @@
 -fx-background-color: #653576;
 }
 
+
+.tab-pane
+{
+-fx-tab-min-height: 2em; /* 24 */
+-fx-tab-max-height: 2em; /* 24 */
+}
+.tab .tab-label
+{
+-fx-alignment: CENTER;
+-fx-text-fill: #ffffff;
+}
+
+.tab-content-area
+{
+-fx-background-color: secundaria;
+-fx-padding: 0.0em;
+
+}
+
+.tab:selected
+{
+-fx-border-color: secundaria;
+-fx-background-insets: 0, 1 1 0 1;
+-fx-background-radius: 5 5 0 0, 4 4 0 0;
+-fx-border-width: 0 0 3 0;
+}
+
+.tab-pane *.tab-header-background
+{
+-fx-background-color: transparent;
+
+}
+.tab:top:selected
+{
+-fx-background-color: transparent;
+}
+.tab:top
+{
+-fx-background-color: transparent;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
+
+.vbox{
+
+-fx-background-color: transparent;
+-fx-background-fills: transparent;
+
+}

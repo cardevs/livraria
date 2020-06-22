@@ -1,5 +1,6 @@
 package livraria.controllers;
 
+
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
@@ -17,6 +18,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import livraria.dao.ArmarioDAO;
+/*Outros Mambos*/
+import livraria.model.LivroModel;
 
 public class AdicionarLivroController {
 
@@ -53,14 +57,21 @@ public class AdicionarLivroController {
     public void initialize(){
 
         capa.setFill(new ImagePattern(new Image("/livraria/resources/img/addImage.png")));
-capa.setStroke(Color.TRANSPARENT);
+        capa.setStroke(Color.TRANSPARENT);
 
     }
 
 
     @FXML
     void adicionarLivro(ActionEvent event) {
-        System.out.println("Funcionando Adicionar!!");
+        
+        
+        LivroModel libro = new LivroModel(tituloLivro.getText(), autorLivro.getText(), 45, "Romance", editoraLivro.getText(), "Escuro", descricaoLivro.getText());
+        ArmarioDAO armarioDAO=new ArmarioDAO();
+        armarioDAO.addLivros(libro);
+        armarioDAO.mostrarLivros();
+        
+        //System.out.println("Funcionando Adicionar!!");
     }
 
     @FXML

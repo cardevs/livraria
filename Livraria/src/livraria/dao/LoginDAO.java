@@ -20,15 +20,15 @@ import livraria.model.core.ConexaoDB;
  */
 public class LoginDAO {
 /*Método responsavél por verificar a senha e nome do Usuario na Base de Dados*/
-     public boolean entrar( String usuarioName, String usuarioPass)
+     public boolean entrar( String usuarioEmail, String usuarioPass)
     {
         Connection conn=ConexaoDB.getConnection();//Abertura da conexão com a base de Dados
         PreparedStatement statement=null;//Variavel de preparação de statement
         ResultSet resultSet=null;//Variavel que guarda os resultados que vêm da da BD
         boolean checkLogin=false;
         try {
-            statement=conn.prepareStatement("SELECT * FROM login WHERE username=? and password=?");
-            statement.setString(1, usuarioName);
+            statement=conn.prepareStatement("SELECT * FROM login WHERE email_login=? and password=?");
+            statement.setString(1, usuarioEmail);
             statement.setString(2, usuarioPass);
             resultSet=statement.executeQuery();
             

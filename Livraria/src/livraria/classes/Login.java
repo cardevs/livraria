@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package livraria.classes;
-import livraria.model.core.ConexaoDB;
 /**
  *
  * @author Adamastor Chimalange

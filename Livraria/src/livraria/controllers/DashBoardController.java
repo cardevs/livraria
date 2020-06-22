@@ -34,12 +34,14 @@ public class DashBoardController {
 
     @FXML
     void mostrarResumo(ActionEvent event) {
-        ancorCentro.getChildren().clear();
+        ancorCentro.getChildren().clear();//Limpa a parte central
         try {
             FXMLLoader carregador= new FXMLLoader();
             carregador.setLocation(getClass().getResource("/livraria/views/Resumo.fxml"));
             AnchorPane resumo=carregador.load();
-
+            /*
+            * O setTopAnchor e outros serve para definir como sera a responsividade
+            * */
            ancorCentro.setTopAnchor(resumo,0.0);
             ancorCentro.setLeftAnchor(resumo,0.0);
             ancorCentro.setRightAnchor(resumo,0.0);
@@ -105,7 +107,6 @@ public class DashBoardController {
 
     private void carregarDados()//Esta funcao carrega dados da Base de Dados na DashBoard
     {
-
         System.out.println("Funcionando!!!");
     }
 

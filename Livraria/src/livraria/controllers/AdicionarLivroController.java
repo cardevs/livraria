@@ -6,12 +6,14 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
@@ -54,14 +56,23 @@ public class AdicionarLivroController {
     @FXML
     private JFXButton btnAdicionar;
 
+
+
+
+
+
+
+
+
+
     public void initialize(){
 
         capa.setFill(new ImagePattern(new Image("/livraria/resources/img/addImage.png")));
         capa.setStroke(Color.TRANSPARENT);
 
+
+
     }
-
-
     @FXML
     void adicionarLivro(ActionEvent event) {
         
@@ -76,15 +87,15 @@ public class AdicionarLivroController {
 
     @FXML
     void cancelar(ActionEvent event) {
-        System.out.println("Funcionando Cancelar");
+        Stage janela= (Stage)((Node)event.getSource()).getScene().getWindow();
+        janela.close();
     }
 
     @FXML
     void inserirImagem(){
 
         File caminho= new File(String.valueOf(getClass().getResource("/imagens")));
-         String caminho2= caminho.getAbsolutePath().replace("null","imagens\\");
-      //  System.out.println(caminho.getAbsolutePath());
+        String caminho2= caminho.getAbsolutePath().replace("null","imagens\\");
         System.out.println(caminho2);
         FileChooser escolherFicheiro= new FileChooser();
         escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png"));

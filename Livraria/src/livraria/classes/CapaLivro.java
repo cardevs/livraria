@@ -16,6 +16,12 @@ public class CapaLivro {
         this.url = url;
     }
 
+    public CapaLivro(int id, String nome) {
+        this.id = id;
+        this.nome = nome;
+        this.url="recursos/img/"+nome;
+    }
+
     public int getId() {
         return id;
     }

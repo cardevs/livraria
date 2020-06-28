@@ -2,8 +2,6 @@
 package livraria.model;
 
 import com.sun.net.httpserver.Authenticator;
-import java.sql.Date;
-import java.time.LocalDate;
 import javax.security.auth.login.FailedLoginException;
 
 public class PessoaModel {
@@ -13,10 +11,21 @@ public class PessoaModel {
     private String email;
     private String aniversario;
     private String senha;
+    private String senhaTest;
     //private String senhaTest;//Atributo que recebe a senha para confirmar é mesma
 
     public PessoaModel() {
     }
+
+    public PessoaModel(String nome, String sobrenome, String email, String aniversario, String senha,String senhaTest) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.email = email;
+        this.aniversario = aniversario;
+        this.senha = senha;
+        this.senhaTest=senhaTest;
+    }
+   
 
     public int getId_utilizador() {
         return id_utilizador;
@@ -64,6 +73,14 @@ public class PessoaModel {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public String getSenhaTest() {
+        return senhaTest;
+    }
+
+    public void setSenhaTest(String senhaTest) {
+        this.senhaTest = senhaTest;
     }
     
 }

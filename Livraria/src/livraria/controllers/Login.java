@@ -20,13 +20,10 @@ import javafx.scene.layout.Pane;
 
 import javax.swing.*;
 import java.io.IOException;
-import livraria.model.core.ConexaoDB;
-import java.sql.Connection;
-import java.sql.Date;
-import java.time.LocalDate;
 import livraria.dao.LoginDAO;
 import livraria.dao.PessoaDAO;
 import livraria.model.PessoaModel;
+
 public class Login {
 
      @FXML
@@ -179,28 +176,22 @@ public class Login {
     }
     @FXML
     void registar(ActionEvent event) {
-         PessoaModel pessoaModel=new PessoaModel();
-            try {
-                    /*Pegando os dados dos TextFields e DatePickers*/
-                    pessoaModel.setNome(usernameRegisto.getText());
-                    pessoaModel.setSobrenome(sobrenomeRegisto.getText());
-                    pessoaModel.setEmail(emailRegisto.getText());
-                    String data;
-                    data = String.valueOf(dataAniversarioRegisto.getValue());/*Converte os DatePickers em Strings*/
-                    pessoaModel.setAniversario(data);
-                    pessoaModel.setSenha(senhaRegisto.getText());
-                    String test_senha=rSenhaRegisto.getText();
-                    
-                        /*Verifica se as senhas inseridas são iguais ou não.*/
-                    if (pessoaModel.getSenha().equals(test_senha)) {
-                            PessoaDAO pessoaDAO = new PessoaDAO();
-                            pessoaDAO.registrarPessoa(pessoaModel);  
-                            JOptionPane.showMessageDialog(null,"Usuario Criado com Sucesso!");
-                            System.out.println("Funcionando!");
-                    } else {
-                        JOptionPane.showMessageDialog(null,"As senhas não são iguais.");
-                        System.out.println("Senha não são iguais.");
-                    }
+            try { 
+                //Cria uma instância do PessoaModel para pegar as informações do formulario
+                PessoaModel pessoaModel=new PessoaModel(usernameRegisto.getText(),sobrenomeRegisto.getText(),emailRegisto.getText(),String.valueOf(dataAniversarioRegisto.getValue()),senhaRegisto.getText(),rSenhaRegisto.getText());
+                PessoaDAO pessoaDAO= new PessoaDAO();
+                //Verifica se o formulario foi bem preenchido
+                if (pessoaDAO.registrarPessoa(pessoaModel)) {
+                    JOptionPane.showMessageDialog(null,"Usuario Criado com Sucesso!");
+                    usernameRegisto.setText("");
+                    sobrenomeRegisto.setText("");
+                    emailRegisto.setText("");
+                    dataAniversarioRegisto.setValue(null);
+                    senhaRegisto.setText("");
+                    rSenhaRegisto.setText("");
+                }else{
+                    JOptionPane.showMessageDialog(null,"Senha ou email não compativel.");
+                }
                 } catch (Exception e) {
                         e.printStackTrace();
                   }

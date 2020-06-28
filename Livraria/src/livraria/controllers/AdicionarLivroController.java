@@ -60,7 +60,7 @@ public class AdicionarLivroController {
     private JFXButton btnAdicionar;
 
 
-
+File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariamente
 
 
 
@@ -69,9 +69,10 @@ public class AdicionarLivroController {
 
 
     public void initialize(){
-
+/*
         capa.setFill(new ImagePattern(new Image("/livraria/resources/img/addImage.png")));
         capa.setStroke(Color.TRANSPARENT);
+<<<<<<< HEAD
         
         /*
             Parte onde busca as categorias dos livro na BD e apresenta na app
@@ -83,10 +84,15 @@ public class AdicionarLivroController {
         observableTest=FXCollections.observableArrayList(ArmarioDAO.buscarCategoriaDoLivro());
         categoriaLivro.setItems(observableTest);
 
+=======
+
+*/
+>>>>>>> 9886d8a1ac8d88af91fa3d1bda8f3d2fe3d94c62
 
     }
     @FXML
     void adicionarLivro(ActionEvent event) {
+<<<<<<< HEAD
         /*Verificando se existe um campo em branco no formulario*/
         boolean testando;
         testando= verificaCamposEmBrancosNoForm(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),anoPubLivro.getText(), numeroPgLivro.getText());
@@ -105,6 +111,24 @@ public class AdicionarLivroController {
             System.out.println("Existe campos vazios.");
         }
         
+=======
+        System.out.println("Funcionando Adicionar!!");
+
+      if (ficheiro!=null)
+      {
+          try {
+              Path source = Paths.get(ficheiro.getAbsolutePath());
+              Path destination = Paths.get("recursos/img/"+ficheiro.getName());
+              Files.copy(source, destination);//Copia um ficheiro de um lugar para outro
+          } catch (IOException erro){
+
+              System.out.println(erro.getMessage());
+          }
+      }
+
+      /*Codigo para salvar na Base de Dados*/
+
+>>>>>>> 9886d8a1ac8d88af91fa3d1bda8f3d2fe3d94c62
     }
 
     @FXML
@@ -116,22 +140,11 @@ public class AdicionarLivroController {
     @FXML
     void inserirImagem(){
 
-        File caminho= new File(String.valueOf(getClass().getResource("/imagens")));
-        String caminho2= caminho.getAbsolutePath().replace("null","imagens\\");
-        System.out.println(caminho2);
         FileChooser escolherFicheiro= new FileChooser();
         escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png"));
-        File ficheiro=escolherFicheiro.showOpenDialog(null);
-
-      try {
-          Path source = Paths.get(ficheiro.getAbsolutePath());
-          Path destination = Paths.get("/imagens/"+ficheiro.getName());
-          Files.copy(source, destination);
-      } catch (IOException erro){
-
-          System.out.println(erro.getMessage());
-      }
-        capa.setFill(new ImagePattern(new Image("/imagens/chima.png")));
+        ficheiro=escolherFicheiro.showOpenDialog(null);
+        capa.setFill(new ImagePattern(new Image("file:///"+ficheiro.getAbsolutePath())));
+        capa.setStroke(Color.TRANSPARENT);
 
     }
     /*Metodo que verifica os dados se ha campos em branco no formulario*/

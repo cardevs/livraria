@@ -2,3 +2,6 @@
 /Livraria/build/
 *.db
 *.log
+/ChartAdvancedArea/nbproject/private/
+/ChartAdvancedArea/dist/
+/ChartAdvancedArea/build/

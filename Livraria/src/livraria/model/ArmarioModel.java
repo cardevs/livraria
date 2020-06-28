@@ -5,10 +5,6 @@
  */
 package livraria.model;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
-import livraria.model.core.ConexaoDB;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,15 +25,6 @@ public class ArmarioModel {
     public void setLivros(List<LivroModel> livros) {
         this.livros = livros;
     }
-  
-  public void mostrarCategoriaDoLivro(){
-      Connection connector=ConexaoDB.getConnection();
-      String sql="Select * from bookCategory";
-      Statement statement=null;
-      try {
-          statement=connector.prepareStatement(sql);
-      } catch (Exception e) {
-      }
-  
-  }
 }
+  
+  

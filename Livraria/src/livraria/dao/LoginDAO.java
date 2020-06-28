@@ -8,8 +8,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import livraria.model.PessoaModel;
 import livraria.model.core.ConexaoDB;
 
 /**
@@ -38,8 +36,7 @@ public class LoginDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally{
-            ConexaoDB.closeConnection(conn);
-            ConexaoDB.closeStatement(statement);
+            ConexaoDB.closeConnection(conn,statement,resultSet);
         }
         return checkLogin;
     }

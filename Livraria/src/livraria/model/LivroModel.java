@@ -17,15 +17,25 @@ public class LivroModel {
     private String editora;
     private String capa;
     private String descricao;
+    private int anoDeLancamento;
 
-    public LivroModel(String titulo, String autor, int paginas, String categoria, String editora, String capa, String descricao) {
+    public LivroModel(String titulo,String autor,String categoria,String editora,int anoDeLancamento,int paginas,String descricao,String capa) {
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = paginas;
         this.categoria = categoria;
         this.editora = editora;
         this.capa = capa;
+        this.anoDeLancamento=anoDeLancamento;
         this.descricao = descricao;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
     }
 
     public String getTitulo() {
@@ -60,11 +70,11 @@ public class LivroModel {
         this.categoria = categoria;
     }
 
-    public String getEdicao() {
+    public String getEditora() {
         return editora;
     }
 
-    public void setEdicao(String edicao) {
+    public void setEditora(String edicao) {
         this.editora = edicao;
     }
 
@@ -83,6 +93,9 @@ public class LivroModel {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    
-    
+    @Override
+    public String toString(){
+        return titulo+"\n"+autor+"\n"+paginas+"\n"+categoria+"\n"+editora+"\n"+descricao+"\n"+anoDeLancamento+"\n"+capa;
+    }
 }
+    

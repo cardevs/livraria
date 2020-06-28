@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef6954-18f7-44dd-bf2a-222c3ae9aff2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/imagens/chima.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/classes/AdicionarImagem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/classes/CapaLivro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/classes/CapaLivro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/AdicionarLivroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/AdicionarLivroController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imagens/chima.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/classes/CapaLivro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/classes/CapaLivro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/classes/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/classes/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

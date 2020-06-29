@@ -85,11 +85,15 @@ public class AdicionarLivroController {
     }
     @FXML
     void adicionarLivro(ActionEvent event) {
+        /*String adam=autorLivro.getText();
+        boolean luz=verificaNome(adam);
+        System.out.println(luz);*/
+
         boolean testando;
         testando= verificaCamposEmBrancosNoForm(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),anoPubLivro.getText(), numeroPgLivro.getText());
         //Testa se existe campos vazios.
         System.out.println("Ola");
-        if (!testando) {
+            if (!testando) {
             System.out.println("Ola2");
             //Caso n tenha um campo vazio, testa se o nome do autor comeca com um numero ou caracter especial
                 if (verificaNome(autorLivro.getText())) {
@@ -147,7 +151,7 @@ public class AdicionarLivroController {
 
     @FXML
     void inserirImagem(){
-ficheiro = new File(".");
+        ficheiro = new File(".");
         FileChooser escolherFicheiro= new FileChooser();
         escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png"));
         ficheiro=escolherFicheiro.showOpenDialog(null);
@@ -157,8 +161,7 @@ ficheiro = new File(".");
     }
     /*Metodo que verifica os dados se ha campos em branco no formulario*/
     private boolean verificaNome(String nome){
-        boolean resposta;
-        resposta = Regular_Expressions.verificaNome(nome);
+        boolean resposta= Regular_Expressions.verificaNome(nome);
     return resposta;
     }
       

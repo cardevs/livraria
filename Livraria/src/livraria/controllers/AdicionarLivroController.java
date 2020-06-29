@@ -17,14 +17,14 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import jdk.nashorn.internal.scripts.JO;
 import livraria.dao.ArmarioDAO;
-import livraria.dao.Regular_Expressions;
+import livraria.classes.Regular_Expressions;
 import livraria.model.LivroModel;
 
 import javax.swing.*;
@@ -88,25 +88,37 @@ public class AdicionarLivroController {
         boolean testando;
         testando= verificaCamposEmBrancosNoForm(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),anoPubLivro.getText(), numeroPgLivro.getText());
         //Testa se existe campos vazios.
+        System.out.println("Ola");
         if (!testando) {
+            System.out.println("Ola2");
             //Caso n tenha um campo vazio, testa se o nome do autor comeca com um numero ou caracter especial
                 if (verificaNome(autorLivro.getText())) {
-
+                    System.out.println("Ola3");
                     if (ficheiro!=null) //Verifiva se foi adicionado alguma imagem
                     {
+                        System.out.println("Ola4");
                         try {
                             Path source = Paths.get(ficheiro.getAbsolutePath());
                             Path destination = Paths.get("recursos/img/"+ficheiro.getName());
                             Files.copy(source, destination);//Copia um ficheiro de um lugar para outro
-
                             LivroModel libro = new LivroModel(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),Integer.parseInt(anoPubLivro.getText()),Integer.parseInt(numeroPgLivro.getText()), descricaoLivro.getText(), ficheiro.getName());
                             ArmarioDAO armarioDAO=new ArmarioDAO();
                             armarioDAO.addLivros(libro);
                             JOptionPane.showMessageDialog(null,"Livro Adicionado com sucesso");
                             limparCampos();
+                            System.out.println("Ola5");
 
-                        } catch (IOException erro){
-                            System.out.println(erro.getMessage());
+                        }
+                        catch (FileAlreadyExistsException e)/*Caso o ficheiro ja exista ele nao copia*/
+                        {
+                            LivroModel libro = new LivroModel(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),Integer.parseInt(anoPubLivro.getText()),Integer.parseInt(numeroPgLivro.getText()), descricaoLivro.getText(), ficheiro.getName());
+                            ArmarioDAO armarioDAO=new ArmarioDAO();
+                            armarioDAO.addLivros(libro);
+                            JOptionPane.showMessageDialog(null,"Livro Adicionado com sucesso");
+                            limparCampos();
+                        }
+                        catch (IOException erro){
+                            JOptionPane.showMessageDialog(null,erro.getMessage());
                         }
                     }
                     else {
@@ -164,7 +176,6 @@ ficheiro = new File(".");
         categoriaLivro.setValue(null);
         numeroPgLivro.setText("");
         tituloLivro.setText("");
-        capa.setFill(null);
         descricaoLivro.setText("");
     }
     

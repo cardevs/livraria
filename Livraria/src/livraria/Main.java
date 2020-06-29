@@ -24,7 +24,6 @@ public class Main extends Application{
         
       janelaPrincipal=stage;
       try{
-          // JOptionPane.showMessageDialog(null, "We are CarneirosDev!!!!!");
           Parent raiz=FXMLLoader.load(getClass().getResource("/livraria/views/Login.fxml"));
           Scene cenario= new Scene(raiz);
           janelaPrincipal.setScene(cenario);
@@ -37,9 +36,6 @@ public class Main extends Application{
           JOptionPane.showMessageDialog(null,"Erro a tentar abrir a View"+erro.getMessage());
       }
     }
-   
-    
-    
     public static void main(String[] args) {
         Connection conn=null;
         conn=ConexaoDB.getConnection();

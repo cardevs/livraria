@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package livraria.dao;
+package livraria.classes;
 
 import livraria.model.LivroModel;
 
@@ -30,7 +30,7 @@ public abstract class Regular_Expressions {
     {/*^[a-zA-Z]{2,}[\w]* esta expressao regular verifica se o nome do autor comeca
       com uma letra e tem no minino dois caracteres  
         */
-        final String condicao="^[a-zA-Z]{2,9}[\\w]*";
+        final String condicao="^[a-zA-Z]{2,}[\\w]*";
         return book.matches(condicao);
     }
 }

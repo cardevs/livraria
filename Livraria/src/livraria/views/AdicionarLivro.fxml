@@ -38,7 +38,7 @@
             <JFXTextField fx:id="numeroPgLivro" focusColor="#f0f3be" labelFloat="true" layoutX="10.0" layoutY="111.0" promptText="Nº de Páginas" styleClass="labeTExt" stylesheets="@../resources/styles/estilos.css" unFocusColor="#f0f3be" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <TextArea fx:id="descricaoLivro" layoutX="191.0" layoutY="169.0" prefHeight="107.0" prefWidth="338.0" promptText="Descriçao" />
+      <TextArea fx:id="descricaoLivro" layoutX="191.0" layoutY="169.0" prefHeight="107.0" prefWidth="338.0" promptText="Descriçao" wrapText="true" />
       <HBox layoutX="287.0" layoutY="288.0" prefHeight="36.0" prefWidth="241.0" spacing="20.0">
          <children>
             <JFXButton fx:id="btnCancelar" onAction="#cancelar" prefHeight="34.0" prefWidth="110.0" styleClass="botaoCancelar" stylesheets="@../resources/styles/estilos.css" text="Cancelar" />

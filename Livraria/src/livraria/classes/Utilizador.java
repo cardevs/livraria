@@ -7,7 +7,7 @@ package livraria.classes;
 
 /**
  *
- * @author Adolfo PC
+ * @author Carneiro Dev
  */
 public class Utilizador {
 

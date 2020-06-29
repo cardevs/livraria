@@ -1,4 +1,10 @@
+/*Esta classe controla a janela de para adicionar livro por parte do utilizador*/
+
+
+
 package livraria.controllers;
+
+
 
 
 import com.jfoenix.controls.JFXButton;
@@ -29,6 +35,8 @@ import livraria.model.LivroModel;
 
 import javax.swing.*;
 /*Outros Mambos*/
+
+
 
 public class AdicionarLivroController {
 
@@ -65,11 +73,6 @@ public class AdicionarLivroController {
     private static File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariamente
 
     public void initialize(){
-/*
-        capa.setFill(new ImagePattern(new Image("/livraria/resources/img/addImage.png")));
-        capa.setStroke(Color.TRANSPARENT);
-<<<<<<< HEAD
-        
         /*
             Parte onde busca as categorias dos livro na BD e apresenta na app
             Variavel observableTest recebe a lista vinda da base de dados e e converte em uma Lista do 
@@ -88,15 +91,11 @@ public class AdicionarLivroController {
         boolean testando;
         testando= verificaCamposEmBrancosNoForm(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),anoPubLivro.getText(), numeroPgLivro.getText());
         //Testa se existe campos vazios.
-        System.out.println("Ola");
         if (!testando) {
-            System.out.println("Ola2");
             //Caso n tenha um campo vazio, testa se o nome do autor comeca com um numero ou caracter especial
                 if (verificaNome(autorLivro.getText())) {
-                    System.out.println("Ola3");
                     if (ficheiro!=null) //Verifiva se foi adicionado alguma imagem
                     {
-                        System.out.println("Ola4");
                         try {
                             Path source = Paths.get(ficheiro.getAbsolutePath());
                             Path destination = Paths.get("recursos/img/"+ficheiro.getName());
@@ -149,7 +148,7 @@ public class AdicionarLivroController {
     void inserirImagem(){
 ficheiro = new File(".");
         FileChooser escolherFicheiro= new FileChooser();
-        escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png"));
+        escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png","*.jpg"));
         ficheiro=escolherFicheiro.showOpenDialog(null);
         capa.setFill(new ImagePattern(new Image("file:///"+ficheiro.getAbsolutePath())));
         capa.setStroke(Color.TRANSPARENT);

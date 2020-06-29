@@ -88,10 +88,16 @@ public class AdicionarLivroController {
     }
     @FXML
     void adicionarLivro(ActionEvent event) {
+        /*String adam=autorLivro.getText();
+        boolean luz=verificaNome(adam);
+        System.out.println(luz);*/
+
         boolean testando;
         testando= verificaCamposEmBrancosNoForm(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),anoPubLivro.getText(), numeroPgLivro.getText());
         //Testa se existe campos vazios.
         if (!testando) {
+            if (!testando) {
+
             //Caso n tenha um campo vazio, testa se o nome do autor comeca com um numero ou caracter especial
                 if (verificaNome(autorLivro.getText())) {
                     if (ficheiro!=null) //Verifiva se foi adicionado alguma imagem
@@ -105,7 +111,6 @@ public class AdicionarLivroController {
                             armarioDAO.addLivros(libro);
                             JOptionPane.showMessageDialog(null,"Livro Adicionado com sucesso");
                             limparCampos();
-                            System.out.println("Ola5");
 
                         }
                         catch (FileAlreadyExistsException e)/*Caso o ficheiro ja exista ele nao copia*/
@@ -130,13 +135,13 @@ public class AdicionarLivroController {
                 }else{
                     System.out.println("Nome Invalido.");
                 }
-        
+
         }else{
             System.out.println("Existe campos vazios.");
         }
         System.out.println("Funcionando Adicionar!!");
 
-    }
+    }}
 
     @FXML
     void cancelar(ActionEvent event) {
@@ -146,7 +151,7 @@ public class AdicionarLivroController {
 
     @FXML
     void inserirImagem(){
-ficheiro = new File(".");
+        ficheiro = new File(".");
         FileChooser escolherFicheiro= new FileChooser();
         escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png","*.jpg"));
         ficheiro=escolherFicheiro.showOpenDialog(null);
@@ -156,11 +161,10 @@ ficheiro = new File(".");
     }
     /*Metodo que verifica os dados se ha campos em branco no formulario*/
     private boolean verificaNome(String nome){
-        boolean resposta;
-        resposta = Regular_Expressions.verificaNome(nome);
+        boolean resposta= Regular_Expressions.verificaNome(nome);
     return resposta;
     }
-      
+
     //String tituloLivro.getText(),String autorLivro.getText(),String categoriaLivro.getValue(),String editoraLivro.getText(),String anoPubLivro.getText(),String numeroPgLivro.getText(),String descricaoLivro.getText()
     private boolean verificaCamposEmBrancosNoForm(String titulo,String autor, String categoria, String editora, String anoPub,String numeroPag){
         boolean resultado;
@@ -177,6 +181,8 @@ ficheiro = new File(".");
         tituloLivro.setText("");
         descricaoLivro.setText("");
     }
-    
+
 
 }
+
+

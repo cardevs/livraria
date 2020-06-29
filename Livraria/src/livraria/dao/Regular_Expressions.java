@@ -30,7 +30,7 @@ public abstract class Regular_Expressions {
     {/*^[a-zA-Z]{2,}[\w]* esta expressao regular verifica se o nome do autor comeca
       com uma letra e tem no minino dois caracteres  
         */
-        final String condicao="^[a-zA-Z]{2,}[\\w]*";
+        final String condicao="^[a-zA-Z]{2,9}[\\w]*";
         return book.matches(condicao);
     }
 }

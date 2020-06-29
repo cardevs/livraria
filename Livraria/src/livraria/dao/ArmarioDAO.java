@@ -4,14 +4,16 @@
  * and open the template in the editor.
  */
 package livraria.dao;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import livraria.controllers.Livraria;
 import livraria.model.LivroModel;
 import livraria.model.core.ConexaoDB;
+
+import javax.swing.*;
+
 /**
  *
  * @author Adamastor Chimalange
@@ -43,7 +45,7 @@ public class ArmarioDAO {
         }
     }   
     
-    /*Classe responsavel pr pegar as categorias na base de Dados*/
+    /*Funcao responsavel por buscar as categorias na base de Dados*/
     public static List<String> buscarCategoriaDoLivro(){
       List<String> categoriasLivros=new ArrayList<>();
       Connection connector=ConexaoDB.getConnection();
@@ -78,7 +80,50 @@ public class ArmarioDAO {
             rs.last();
         } catch (Exception e) {
         }finally{ConexaoDB.closeConnection(connector, stmt, rs);}
-        
-    
+
     }
+
+    /*Funcao Responsavel por buscar todos os livros de um armario*/
+    public static ArrayList<LivroModel> buscarLivros(int utilizador){
+
+        return null;
+    }
+
+    public static  ArrayList<LivroModel> buscarLivros(){
+
+
+        ArrayList<LivroModel> livros= new ArrayList<>();
+        try {
+            String query="Select * from book"; //Sera alterado para o armario em vez de livro ou podera ser feito um join
+            Connection conexao=ConexaoDB.getConnection();
+            PreparedStatement stm=conexao.prepareStatement(query);
+            ResultSet resultado=stm.executeQuery();
+            if (resultado==null)
+                return null;
+            else {
+                while (resultado.next()){
+                    livros.add(new LivroModel(
+                    resultado.getInt("id_book")
+                    ,resultado.getString("title")
+                    ,resultado.getString("author")
+                    ,resultado.getInt("page_number")
+                    ,resultado.getString("category")
+                    ,resultado.getString("publishing_company")
+                    ,resultado.getString("cover")
+                    ,resultado.getString("description")
+                    ,resultado.getInt("release_year")));
+                                        }
+                return livros;
+}
+
+
+        }catch (SQLException erro){
+
+            JOptionPane.showMessageDialog(null,"Erro ao tentar buscar os livros do armario!");
+        }
+
+
+        return null;
+    }
+
 }

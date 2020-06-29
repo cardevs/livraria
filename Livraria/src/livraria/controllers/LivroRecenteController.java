@@ -6,6 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
+import livraria.classes.LivrariaStrategy;
 
 import javax.swing.*;
 
@@ -30,13 +31,8 @@ public class LivroRecenteController {
     public void initialize(){
 
         img.setStyle("-fx-background-color: #ffffff");
-        //img.setFill(new ImagePattern(new Image("/livraria/resources/img/livros4.png")));
-        img.setFill(new ImagePattern(new Image("/database/chima.png")));
-
-        Image nova=new Image("/imagens/chima.png");
 
         img.setOnMouseClicked(event -> {
-
             JOptionPane.showMessageDialog(null,livroAutor.getText());
 
 
@@ -44,10 +40,12 @@ public class LivroRecenteController {
 
     }
 
-    public void adicionarDados(String titulo, String autor){
+    public void adicionarDados(String titulo, String autor, String capa){
 
 
         livroTitulo.setText(titulo);
         livroAutor.setText(autor);
+        if (!capa.equals("*"))//Caso o livro nao tenha capa
+            img.setFill(new ImagePattern(new Image(LivrariaStrategy.buscarCapaLivro(capa))));
     }
 }

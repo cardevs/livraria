@@ -55,16 +55,19 @@ public class LivroController {
         System.out.println("Estou a funcionar");
     }
 
+
+
+
     @FXML
     void verDados(ActionEvent event) {
    try {
        FXMLLoader carregador= new FXMLLoader();
        carregador.setLocation(LivroController.class.getResource("/livraria/views/LivroDetalhes.fxml"));
        Parent livroDetalhes=carregador.load();
-       LivroDetalhesController controlador= new LivroDetalhesController();
+       //LivroDetalhesController controlador= new LivroDetalhesController();
        Scene cenario= new Scene(livroDetalhes);
        Stage janela= new Stage();
-       janela.setTitle("Detalhes do Livro");
+       janela.setTitle("Detalhes do Livro t");
        janela.setScene(cenario);
        janela.show();
    }catch (IOException erro){

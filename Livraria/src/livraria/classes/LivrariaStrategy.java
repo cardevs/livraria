@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import livraria.Main;
 
 import javax.swing.*;
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -54,5 +55,13 @@ public class LivrariaStrategy {
             JOptionPane.showMessageDialog(null,"Erro ao tentar carregar o painel\n"+erro.getMessage());
         }
 return null;
+    }
+
+    public static String buscarCapaLivro(String nome)
+    {
+        File ficheiro= new File("recursos/img/"+nome);
+        return "file:///"+ficheiro.getAbsolutePath();
+
+
     }
 }

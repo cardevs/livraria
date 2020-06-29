@@ -22,9 +22,12 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import jdk.nashorn.internal.scripts.JO;
 import livraria.dao.ArmarioDAO;
 import livraria.dao.Regular_Expressions;
 import livraria.model.LivroModel;
+
+import javax.swing.*;
 /*Outros Mambos*/
 
 public class AdicionarLivroController {
@@ -59,14 +62,7 @@ public class AdicionarLivroController {
     @FXML
     private JFXButton btnAdicionar;
 
-
-File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariamente
-
-
-
-
-
-
+    private static File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariamente
 
     public void initialize(){
 /*
@@ -84,25 +80,42 @@ File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariament
         observableTest=FXCollections.observableArrayList(ArmarioDAO.buscarCategoriaDoLivro());
         categoriaLivro.setItems(observableTest);
 
-=======
 
-*/
->>>>>>> 9886d8a1ac8d88af91fa3d1bda8f3d2fe3d94c62
 
     }
     @FXML
     void adicionarLivro(ActionEvent event) {
-<<<<<<< HEAD
-        /*Verificando se existe um campo em branco no formulario*/
         boolean testando;
         testando= verificaCamposEmBrancosNoForm(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),anoPubLivro.getText(), numeroPgLivro.getText());
         //Testa se existe campos vazios.
         if (!testando) {
             //Caso n tenha um campo vazio, testa se o nome do autor comeca com um numero ou caracter especial
                 if (verificaNome(autorLivro.getText())) {
-                    LivroModel libro = new LivroModel(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),Integer.parseInt(anoPubLivro.getText()),Integer.parseInt(numeroPgLivro.getText()), descricaoLivro.getText(), "Escuro");
-                    ArmarioDAO armarioDAO=new ArmarioDAO();
-                    armarioDAO.addLivros(libro);
+
+                    if (ficheiro!=null) //Verifiva se foi adicionado alguma imagem
+                    {
+                        try {
+                            Path source = Paths.get(ficheiro.getAbsolutePath());
+                            Path destination = Paths.get("recursos/img/"+ficheiro.getName());
+                            Files.copy(source, destination);//Copia um ficheiro de um lugar para outro
+
+                            LivroModel libro = new LivroModel(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),Integer.parseInt(anoPubLivro.getText()),Integer.parseInt(numeroPgLivro.getText()), descricaoLivro.getText(), ficheiro.getName());
+                            ArmarioDAO armarioDAO=new ArmarioDAO();
+                            armarioDAO.addLivros(libro);
+                            JOptionPane.showMessageDialog(null,"Livro Adicionado com sucesso");
+                            limparCampos();
+
+                        } catch (IOException erro){
+                            System.out.println(erro.getMessage());
+                        }
+                    }
+                    else {
+                        LivroModel libro = new LivroModel(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),Integer.parseInt(anoPubLivro.getText()),Integer.parseInt(numeroPgLivro.getText()), descricaoLivro.getText(), "*");
+                        ArmarioDAO armarioDAO=new ArmarioDAO();
+                        armarioDAO.addLivros(libro);
+                        JOptionPane.showMessageDialog(null,"Livro Adicionado com sucesso");
+                        limparCampos();
+                    }
                 }else{
                     System.out.println("Nome Invalido.");
                 }
@@ -110,25 +123,8 @@ File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariament
         }else{
             System.out.println("Existe campos vazios.");
         }
-        
-=======
         System.out.println("Funcionando Adicionar!!");
 
-      if (ficheiro!=null)
-      {
-          try {
-              Path source = Paths.get(ficheiro.getAbsolutePath());
-              Path destination = Paths.get("recursos/img/"+ficheiro.getName());
-              Files.copy(source, destination);//Copia um ficheiro de um lugar para outro
-          } catch (IOException erro){
-
-              System.out.println(erro.getMessage());
-          }
-      }
-
-      /*Codigo para salvar na Base de Dados*/
-
->>>>>>> 9886d8a1ac8d88af91fa3d1bda8f3d2fe3d94c62
     }
 
     @FXML
@@ -139,7 +135,7 @@ File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariament
 
     @FXML
     void inserirImagem(){
-
+ficheiro = new File(".");
         FileChooser escolherFicheiro= new FileChooser();
         escolherFicheiro.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Imagens","*.png"));
         ficheiro=escolherFicheiro.showOpenDialog(null);
@@ -148,19 +144,29 @@ File ficheiro;//Ficheiro que armazenara a capa ou imagem do livro temporariament
 
     }
     /*Metodo que verifica os dados se ha campos em branco no formulario*/
-    public boolean verificaNome(String book){
+    private boolean verificaNome(String nome){
         boolean resposta;
-        resposta = Regular_Expressions.verificaNome(book);
+        resposta = Regular_Expressions.verificaNome(nome);
     return resposta;
     }
       
     //String tituloLivro.getText(),String autorLivro.getText(),String categoriaLivro.getValue(),String editoraLivro.getText(),String anoPubLivro.getText(),String numeroPgLivro.getText(),String descricaoLivro.getText()
-    public boolean verificaCamposEmBrancosNoForm(String titulo,String autor, String categoria, String editora, String anoPub,String numeroPag){
+    private boolean verificaCamposEmBrancosNoForm(String titulo,String autor, String categoria, String editora, String anoPub,String numeroPag){
         boolean resultado;
         resultado = (titulo.equalsIgnoreCase(""))||(autor.equalsIgnoreCase(""))||(editora.equalsIgnoreCase(""))||(anoPub.equalsIgnoreCase(""))||(numeroPag.equalsIgnoreCase(""));
     return resultado;
     }
 
+    private void limparCampos(){
+        autorLivro.setText("");
+        anoPubLivro.setText("");
+        editoraLivro.setText("");
+        categoriaLivro.setValue(null);
+        numeroPgLivro.setText("");
+        tituloLivro.setText("");
+        capa.setFill(null);
+        descricaoLivro.setText("");
+    }
     
 
 }

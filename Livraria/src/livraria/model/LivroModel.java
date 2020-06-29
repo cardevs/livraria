@@ -10,6 +10,7 @@ package livraria.model;
  * @author Adamastor Chimalange
  */
 public class LivroModel {
+   private int id;
     private String titulo;
     private String autor;
     private int paginas;
@@ -28,6 +29,18 @@ public class LivroModel {
         this.capa = capa;
         this.anoDeLancamento=anoDeLancamento;
         this.descricao = descricao;
+    }
+
+    public LivroModel(int id, String titulo, String autor, int paginas, String categoria, String editora, String capa, String descricao, int anoDeLancamento) {
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.paginas = paginas;
+        this.categoria = categoria;
+        this.editora = editora;
+        this.capa = capa;
+        this.descricao = descricao;
+        this.anoDeLancamento = anoDeLancamento;
     }
 
     public int getAnoDeLancamento() {

@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef6954-18f7-44dd-bf2a-222c3ae9aff2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/livraria/controllers/ControladorLivro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/dao/LivrariaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/livraria.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/livraria.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/classes/Regular_Expressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/classes/Regular_Expressions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/AdicionarLivroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/AdicionarLivroController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/Livraria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/LivrariaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/LivrariaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/LivroDetalhesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/LivroDetalhesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/ResumoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/controllers/ResumoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/dao/ArmarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/dao/ArmarioDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/views/Livraria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/views/Livraria.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/views/Livro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/views/Livro.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/views/LivroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/views/LivroController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/AdicionarLivroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/Livraria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/LivrariaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/LivrariaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/LivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/LivroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/LivroDetalhesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/LivroDetalhesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/controllers/ResumoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/controllers/ResumoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/dao/ArmarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/dao/ArmarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/views/Livraria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/views/Livraria.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/views/Livro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/views/Livro.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,48 +136,43 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1592156761201" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1593443896791">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1593631363244">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593443896791" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593631363244" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593459849395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593459849395" />
-    <state width="738" height="178" key="GridCell.Tab.0.bottom" timestamp="1593461071000">
+    <state width="738" height="178" key="GridCell.Tab.0.bottom" timestamp="1593632632344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593461071000" />
-    <state width="738" height="178" key="GridCell.Tab.0.center" timestamp="1593461071000">
+    <state width="738" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593632632344" />
+    <state width="738" height="178" key="GridCell.Tab.0.center" timestamp="1593632632343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593461071000" />
-    <state width="738" height="178" key="GridCell.Tab.0.left" timestamp="1593461071000">
+    <state width="738" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593632632343" />
+    <state width="738" height="178" key="GridCell.Tab.0.left" timestamp="1593632632343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593461071000" />
-    <state width="738" height="178" key="GridCell.Tab.0.right" timestamp="1593461071000">
+    <state width="738" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593632632343" />
+    <state width="738" height="178" key="GridCell.Tab.0.right" timestamp="1593632632343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593461071000" />
+    <state width="738" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593632632343" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/livraria/controllers/ResumoController.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/livraria/controllers/ListaHorizontalLivrosController.java</url>
           <line>25</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/livraria/controllers/LivrariaController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/livraria/controllers/DashBoardController.java</url>

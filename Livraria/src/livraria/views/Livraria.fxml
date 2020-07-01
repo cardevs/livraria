@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="701.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.Livraria">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="701.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="livraria.controllers.LivrariaController">
    <children>
       <AnchorPane layoutX="40.0" layoutY="20.0" prefHeight="33.0" prefWidth="362.0" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="299.0" AnchorPane.topAnchor="20.0">
          <children>

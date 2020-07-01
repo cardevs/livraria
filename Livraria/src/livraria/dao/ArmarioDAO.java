@@ -8,7 +8,6 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import livraria.controllers.Livraria;
 import livraria.model.LivroModel;
 import livraria.model.core.ConexaoDB;
 
@@ -89,41 +88,5 @@ public class ArmarioDAO {
         return null;
     }
 
-    public static  ArrayList<LivroModel> buscarLivros(){
-
-
-        ArrayList<LivroModel> livros= new ArrayList<>();
-        try {
-            String query="Select * from book"; //Sera alterado para o armario em vez de livro ou podera ser feito um join
-            Connection conexao=ConexaoDB.getConnection();
-            PreparedStatement stm=conexao.prepareStatement(query);
-            ResultSet resultado=stm.executeQuery();
-            if (resultado==null)
-                return null;
-            else {
-                while (resultado.next()){
-                    livros.add(new LivroModel(
-                    resultado.getInt("id_book")
-                    ,resultado.getString("title")
-                    ,resultado.getString("author")
-                    ,resultado.getInt("page_number")
-                    ,resultado.getString("category")
-                    ,resultado.getString("publishing_company")
-                    ,resultado.getString("cover")
-                    ,resultado.getString("description")
-                    ,resultado.getInt("release_year")));
-                                        }
-                return livros;
-}
-
-
-        }catch (SQLException erro){
-
-            JOptionPane.showMessageDialog(null,"Erro ao tentar buscar os livros do armario!");
-        }
-
-
-        return null;
-    }
 
 }

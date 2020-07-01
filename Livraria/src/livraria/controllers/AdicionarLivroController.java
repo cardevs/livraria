@@ -88,16 +88,12 @@ public class AdicionarLivroController {
     }
     @FXML
     void adicionarLivro(ActionEvent event) {
-        /*String adam=autorLivro.getText();
-        boolean luz=verificaNome(adam);
-        System.out.println(luz);*/
 
         boolean testando;
         testando= verificaCamposEmBrancosNoForm(tituloLivro.getText(), autorLivro.getText(),categoriaLivro.getValue(),editoraLivro.getText(),anoPubLivro.getText(), numeroPgLivro.getText());
         //Testa se existe campos vazios.
         if (!testando) {
             if (!testando) {
-
             //Caso n tenha um campo vazio, testa se o nome do autor comeca com um numero ou caracter especial
                 if (verificaNome(autorLivro.getText())) {
                     if (ficheiro!=null) //Verifiva se foi adicionado alguma imagem
@@ -111,7 +107,6 @@ public class AdicionarLivroController {
                             armarioDAO.addLivros(libro);
                             JOptionPane.showMessageDialog(null,"Livro Adicionado com sucesso");
                             limparCampos();
-
                         }
                         catch (FileAlreadyExistsException e)/*Caso o ficheiro ja exista ele nao copia*/
                         {
@@ -123,6 +118,7 @@ public class AdicionarLivroController {
                         }
                         catch (IOException erro){
                             JOptionPane.showMessageDialog(null,erro.getMessage());
+                        erro.printStackTrace();
                         }
                     }
                     else {
@@ -141,7 +137,10 @@ public class AdicionarLivroController {
         }
         System.out.println("Funcionando Adicionar!!");
 
-    }}
+    }
+
+        ficheiro=null;//Retira o caminho do ficheiro
+    }
 
     @FXML
     void cancelar(ActionEvent event) {
@@ -181,8 +180,7 @@ public class AdicionarLivroController {
         tituloLivro.setText("");
         descricaoLivro.setText("");
     }
-
-
+    
 }
 
 

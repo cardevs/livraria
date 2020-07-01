@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.HBox;
 import livraria.dao.ArmarioDAO;
+import livraria.dao.LivrariaDao;
 import livraria.model.LivroModel;
 
 import java.io.IOException;
@@ -31,7 +32,7 @@ public class ResumoController {
 
     {       boxMaisRecentes.getChildren().clear();
             ArrayList<LivroModel> livrosDoArmario= new ArrayList<>();
-            livrosDoArmario= ArmarioDAO.buscarLivros();
+            livrosDoArmario= LivrariaDao.buscarLivros();//Devera ser alterado para ArmarioDAO
 
             for (LivroModel livroModel : livrosDoArmario) //Itera Array com livros do armario
 

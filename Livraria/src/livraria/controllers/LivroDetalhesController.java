@@ -9,6 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import livraria.classes.LivrariaStrategy;
 import livraria.model.LivroModel;
 
 import javax.swing.*;
@@ -64,7 +65,7 @@ public class LivroDetalhesController {
 
         });
     }
-
+/*
     public LivroDetalhesController(){
 
     }
@@ -73,12 +74,21 @@ public class LivroDetalhesController {
         this.autor.setText(livro.getAutor());
         this.labelDescricao.setText(livro.getDescricao());
         this.labelEditora.setText(livro.getEditora());
-        this.labelEdicao.setText(livro.getEditora());//Deve se adicionar a edicao;
+      //  this.labelEdicao.setText(livro.getEditora());//Deve se adicionar a edicao;
         this.labelAnoPub.setText(String.valueOf(livro.getAnoDeLancamento()));
         this.labelPaginas.setText(String.valueOf(livro.getPaginas()));
         File ficheiro= new File("recursos/img/"+livro.getCapa());
-        System.out.println(ficheiro.getAbsolutePath());
-        System.out.println(ficheiro.getPath());
         capa.setFill(new ImagePattern(new Image("file:///"+ficheiro.getAbsolutePath())));
+    }*/
+
+    public void carregarDados(LivroModel livro) {
+        titulo.setText(livro.getTitulo());
+        autor.setText(livro.getAutor());
+        capa.setFill(new ImagePattern(new Image(LivrariaStrategy.buscarCapaLivro(livro.getCapa()))));
+        labelDescricao.setText(livro.getDescricao());
+        labelEditora.setText(livro.getEditora());
+        //labelEdicao.setText(livro.get); ;
+        labelAnoPub.setText(String.valueOf(livro.getAnoDeLancamento()));
+        labelPaginas.setText(String.valueOf(livro.getPaginas()));
     }
 }

@@ -1,33 +1,32 @@
 package livraria.controllers;
 
+import com.sun.istack.internal.NotNull;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import livraria.dao.LivrariaDao;
+import livraria.model.LivroModel;
 import livraria.views.LivroController;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class LivrariaController {
 
     @FXML
-    private static VBox listViewTodos;
+    private VBox listViewTodos;
+
 
     public void initialize(){
 
-     //   carregarDados();
-
-
+       // listViewTodos=new VBox();
+          carregarDados();
     }
 
-    public LivrariaController(VBox listViewTodos) {
-        this.listViewTodos = listViewTodos;
-
-
-
-
-    }
 
     public VBox getListViewTodos() {
         return listViewTodos;
@@ -38,36 +37,56 @@ public class LivrariaController {
     }
 
 
-    private void carregarDados(){
+    private void carregarDados()
+/*
+* Esta funcao carrega todos os livros da base de dados
+* */
+    {
+            listViewTodos.getChildren().clear();//Limpa a view onde sera apresentada a lista
+            try {
 
-       try {
-           FXMLLoader carregador= new FXMLLoader();
-           carregador.setLocation(LivrariaController.class.getResource("/livraria/views/ListaHorizontalLivros.fxml"));
-           ListaHorizontalLivrosController contraladorListaaHorizontal=carregador.getController();
-           Parent lista1=carregador.load();
+                ArrayList<LivroModel> livros= LivrariaDao.buscarLivros();
 
-           FXMLLoader carregador2= new FXMLLoader();
-           carregador.setLocation(LivrariaController.class.getResource("/livraria/views/Livro.fxml"));
-           LivroController controllerLivro=carregador.getController();
-           Parent livro=carregador.load();
-           contraladorListaaHorizontal.getListaHorizontal().getChildren().addAll(livro);
-       listViewTodos.getChildren().add(lista1);
-       }catch (IOException erro){
-
-
-           JOptionPane.showMessageDialog(null,"Not possible to show the view!");
-
-
-       }
+                if (livros==null)
+                {
+                    JOptionPane.showMessageDialog(null,"Nenhum livro encontrado!!!");
+                }
+                else
+                {
+                    Iterator<LivroModel> iteradorDeLivros=livros.iterator(); //criado para iterar os livros recebidos na base de Dados
 
 
+                   while (iteradorDeLivros.hasNext())
+                   {
+                       int i=0;
+                       HBox listinha= new HBox();
+                       listinha.setSpacing(20.0);
+                      while (iteradorDeLivros.hasNext() && i<3)//Para adicionar livro a cada lista horizontal
+                       {
+                           LivroModel livroModel=iteradorDeLivros.next();
+                           FXMLLoader carregador= new FXMLLoader();
+                           carregador.setLocation(LivrariaController.class.getResource("/livraria/views/Livro.fxml"));
+                           Parent livro=carregador.load();
+                           ControladorLivro controladorLivro=carregador.getController();
+                          controladorLivro.carregarDados(livroModel);
+                           listinha.getChildren().add(livro);
+                           i++;
+                       }
+                       listViewTodos.getChildren().add(listinha);
+                    }
+
+                    //   controladorListaaHorizontal.addLivro(livro);
+
+                }
 
 
+            }catch (IOException erro){
+
+                erro.printStackTrace();
+            }
+
+        }
 
 
-//Parent root= FXMLLoader.load(LivrariaController.class.getResource(""))
-
-
-    }
 
 }

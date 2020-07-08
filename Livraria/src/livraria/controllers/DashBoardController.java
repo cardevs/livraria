@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
@@ -16,11 +17,15 @@ import java.io.IOException;
 
 public class DashBoardController {
 
+
+    @FXML
+    private Label nomeUtilizador;
+
     @FXML
     private JFXButton btnResumo;
 
     @FXML
-    private AnchorPane ancorCentro;
+    private AnchorPane painelDoCentro;
     @FXML
     private HBox boxMaisRecentes;
 
@@ -34,43 +39,27 @@ public class DashBoardController {
 
     @FXML
     void mostrarResumo(ActionEvent event) {
-        ancorCentro.getChildren().clear();//Limpa a parte central
-        try {
-            FXMLLoader carregador= new FXMLLoader();
-            carregador.setLocation(getClass().getResource("/livraria/views/Resumo.fxml"));
-            AnchorPane resumo=carregador.load();
-            /*
-            * O setTopAnchor e outros serve para definir como sera a responsividade
-            * */
-           ancorCentro.setTopAnchor(resumo,0.0);
-            ancorCentro.setLeftAnchor(resumo,0.0);
-            ancorCentro.setRightAnchor(resumo,0.0);
-          ancorCentro.setBottomAnchor(resumo,0.0);
-            ancorCentro.getChildren().add(resumo);
-        }catch (IOException erro){
-            System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
-        }
+        painelDoCentro.getChildren().clear();//Limpa a parte central
+            AnchorPane resumo=(AnchorPane)LivrariaStrategy.carregarPainel("Resumo");
+           painelDoCentro.setTopAnchor(resumo,0.0);
+            painelDoCentro.setLeftAnchor(resumo,0.0);
+            painelDoCentro.setRightAnchor(resumo,0.0);
+          painelDoCentro.setBottomAnchor(resumo,0.0);
+            painelDoCentro.getChildren().add(resumo);
 
 }
 
 @FXML
     void abrirChat(){
 
-    ancorCentro.getChildren().clear();
-    try {
-        FXMLLoader carregador= new FXMLLoader();
-        carregador.setLocation(getClass().getResource("/livraria/views/Chat.fxml"));
-    AnchorPane chat=carregador.load();
+        painelDoCentro.getChildren().clear();
+        AnchorPane chat=(AnchorPane) LivrariaStrategy.carregarPainel("Chat");
+        painelDoCentro.setTopAnchor(chat,0.0);
+        painelDoCentro.setLeftAnchor(chat,0.0);
+        painelDoCentro.setRightAnchor(chat,0.0);
+        painelDoCentro.setBottomAnchor(chat,0.0);
+        painelDoCentro.getChildren().add(chat);
 
-
-        ancorCentro.setTopAnchor(chat,0.0);
-        ancorCentro.setLeftAnchor(chat,0.0);
-        ancorCentro.setRightAnchor(chat,0.0);
-        ancorCentro.setBottomAnchor(chat,0.0);
-    ancorCentro.getChildren().add(chat);
-    }catch (IOException erro){
-        System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
-}
 }
 @FXML
     void adicionarLivro(){
@@ -101,6 +90,7 @@ public class DashBoardController {
     public HBox getBoxMaisRecentes() {
         return boxMaisRecentes;
     }
+
     public void setBoxMaisRecentes(HBox boxMaisRecentes) {
         this.boxMaisRecentes = boxMaisRecentes;
     }
@@ -113,28 +103,13 @@ public class DashBoardController {
     @FXML
     void mostrarBiblioteca(){
 
-        ancorCentro.getChildren().clear();//Para limpar todo conteudo
-        try {
-            FXMLLoader carregador= new FXMLLoader();
-            carregador.setLocation(getClass().getResource("/livraria/views/Livraria.fxml"));
-            AnchorPane biblioteca=carregador.load();
-
-            /*
-            * A seguir tem o codigo para definir as constraint que permitem a Responsividade
-            *
-            * */
-            ancorCentro.setTopAnchor(biblioteca,0.0);
-            ancorCentro.setLeftAnchor(biblioteca,0.0);
-            ancorCentro.setRightAnchor(biblioteca,0.0);
-            ancorCentro.setBottomAnchor(biblioteca,0.0);
-            ancorCentro.getChildren().add(biblioteca);
-        }catch (IOException erro){
-            System.out.println("Erro a tentar mostrar a View!!\n"+erro.getMessage());
-            erro.printStackTrace();
-        }
-
-
-
+        painelDoCentro.getChildren().clear();//Para limpar todo conteudo
+        AnchorPane biblioteca=(AnchorPane)LivrariaStrategy.carregarPainel("Livraria");
+        painelDoCentro.setTopAnchor(biblioteca,0.0);
+        painelDoCentro.setLeftAnchor(biblioteca,0.0);
+        painelDoCentro.setRightAnchor(biblioteca,0.0);
+        painelDoCentro.setBottomAnchor(biblioteca,0.0);
+        painelDoCentro.getChildren().add(biblioteca);
 
     }
 

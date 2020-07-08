@@ -22,7 +22,7 @@
                      <children>
                         <HBox prefHeight="48.0" prefWidth="190.0" />
                         <Circle fill="WHITE" radius="33.0" stroke="WHITE" strokeType="INSIDE" />
-                        <Label text="Nome do usario" textFill="#f0f3bd" />
+                        <Label fx:id="nomeUtilizador" text="Nome do usario" textFill="#f0f3bd" />
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#mostrarResumo" prefHeight="39.0" prefWidth="190.0" styleClass="botaoDashboard" stylesheets="@../resources/styles/estilos.css" text="Resumo" textAlignment="CENTER" textFill="#f0f3bd">
@@ -77,7 +77,7 @@
             </Pane>
          </left>
          <center>
-            <AnchorPane fx:id="ancorCentro" prefHeight="521.0" prefWidth="701.0" BorderPane.alignment="CENTER" />
+            <AnchorPane fx:id="painelDoCentro" prefHeight="521.0" prefWidth="701.0" BorderPane.alignment="CENTER" />
          </center>
       </BorderPane>
    </children>

@@ -1,6 +1,5 @@
 package livraria.controllers;
 
-import com.sun.istack.internal.NotNull;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,7 +7,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import livraria.dao.LivrariaDao;
 import livraria.model.LivroModel;
-import livraria.views.LivroController;
 
 import javax.swing.*;
 import java.io.IOException;

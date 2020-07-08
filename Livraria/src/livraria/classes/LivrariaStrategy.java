@@ -56,7 +56,6 @@ public class LivrariaStrategy {
         }
 return null;
     }
-
     public static String buscarCapaLivro(String nome)
     {
         File ficheiro= new File("recursos/img/"+nome);

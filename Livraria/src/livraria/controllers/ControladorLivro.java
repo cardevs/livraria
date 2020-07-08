@@ -12,7 +12,6 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import livraria.classes.LivrariaStrategy;
 import livraria.model.LivroModel;
-import livraria.views.LivroController;
 
 import java.io.IOException;
 
@@ -46,10 +45,11 @@ public class ControladorLivro {
     void verDados(ActionEvent event) {
         try {
             FXMLLoader carregador= new FXMLLoader();
-            carregador.setLocation(LivroController.class.getResource("/livraria/views/LivroDetalhes.fxml"));
+            carregador.setLocation(ControladorLivro
+                    .class.getResource("/livraria/views/LivroDetalhes.fxml"));
             Parent livroDetalhes=carregador.load();
             LivroDetalhesController controlador= carregador.getController();
-            controlador.carregarDados(livro);
+            controlador.carregarDados(livro);//Envia os dados para a View
             Scene cenario= new Scene(livroDetalhes);
             Stage janela= new Stage();
             janela.setTitle("Detalhes do Livro t");

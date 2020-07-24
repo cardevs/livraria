@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ef6954-18f7-44dd-bf2a-222c3ae9aff2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/logback_classic_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/server/ServidorMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/livraria.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/livraria.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livraria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/livraria.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/server/Servidor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/server/Servidor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria/livraria/server/ServidorFuncionando.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria/livraria/server/ServidorFuncionando.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/server/Servidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/server/Servidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/server/ServidorFuncionando.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/server/ServidorFuncionando.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,22 +146,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="501" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594392783494" />
-    <state width="745" height="180" key="GridCell.Tab.0.bottom" timestamp="1594726002834">
+    <state width="745" height="180" key="GridCell.Tab.0.bottom" timestamp="1595607800814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594726002834" />
-    <state width="745" height="180" key="GridCell.Tab.0.center" timestamp="1594726002834">
+    <state width="745" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595607800814" />
+    <state width="745" height="180" key="GridCell.Tab.0.center" timestamp="1595607800814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594726002834" />
-    <state width="745" height="180" key="GridCell.Tab.0.left" timestamp="1594726002834">
+    <state width="745" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595607800814" />
+    <state width="745" height="180" key="GridCell.Tab.0.left" timestamp="1595607800814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594726002834" />
-    <state width="745" height="180" key="GridCell.Tab.0.right" timestamp="1594726002834">
+    <state width="745" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595607800814" />
+    <state width="745" height="180" key="GridCell.Tab.0.right" timestamp="1595607800814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594726002834" />
+    <state width="745" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595607800814" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1594392790456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

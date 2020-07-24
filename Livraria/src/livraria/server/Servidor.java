@@ -1,26 +1,32 @@
 package livraria.server;
 
-import javax.imageio.IIOException;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 
-public class Servidor {
+public class Servidor extends Thread{
 
+    private final int porta;
+    private ArrayList<ServidorFuncionando> workers= new ArrayList<>();
 
-    public static void main(String[] args) {
-        int port=8818;
+    public Servidor(int porta) {
+
+    this.porta=porta;
+
+    }
+
+    @Override
+    public void run() {
         try {
-            ServerSocket serverSocket= new ServerSocket(port);
+            ServerSocket serverSocket= new ServerSocket(porta);
 
-            while (true)
+            while (true)//Ciclo infinito para receber conexoes;
             {
                 Socket cliente=serverSocket.accept();//Cria uma nova ligacao para o servidor
-                ServidorFuncionando servidorFuncionando=new ServidorFuncionando(cliente);
+                System.out.println("Conexao aceit: "+cliente);
+                ServidorFuncionando servidorFuncionando=new ServidorFuncionando(this,cliente);
                 servidorFuncionando.start();
-
-
             }
         }catch (IOException e){
             e.printStackTrace();
@@ -28,13 +34,5 @@ public class Servidor {
 
 
 
-
-
     }
-
-
-
-
-
-
 }
